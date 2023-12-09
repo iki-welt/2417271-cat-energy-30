@@ -12,15 +12,19 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__row">
-        <a class="page-header__logo" href="index.html" aria-current="page">
-          <img src="#" width="33" height="38" alt="Логотип 'Cat energy'.">
-          <!-- <picture class="page-header__logo-img">
-            <source srcset="#" media="#" />
-          </picture> -->
-        </a>
-        <img class="page-header__brand" src="#" width="101" height="18" alt="Cat energy.">
-        <button class="page-header__nav-toggler" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo-icon" href="index.html" aria-current="page">
+            <img src="#" width="33" height="38" alt="Логотип 'Cat energy'.">
+            <!-- <picture class="page-header__logo-img">
+              <source srcset="#" media="#" />
+            </picture> -->
+          </a>
+          <a class="page-header__logo-type" href="index.html" tabindex="-1" aria-current="page">
+            <img class="page-header__brand" src="#" width="101" height="18" alt="Cat energy.">
+          </a>
+        </div>
+        <button class="page-header__nav-toggler" type="button" aria-label="Открыть меню.">
+          <span class="page-header__nav-toggler-line"></span>
         </button>
       </div>
       <nav class="page-header__nav main-nav">
@@ -39,12 +43,17 @@
     </div>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">Cat Energy - Ваш кот обязательно станет boss of the gym.</h1>
+    <h1 class="visually-hidden">Продукция Cat Energy.</h1>
     <section class="hero">
       <div class="hero__wrapper">
         <h2 class="hero__title title-prime title-prime--extra">Функциональное питание для котов</h2>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
         <a class="hero__form-button link-btn-prime" href="form.html">подобрать программу</a>
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/main-preview_l@1x.png 1x, images/main-preview_l@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/main-preview_m@1x.png 1x, images/main-preview_m@2x.png 2x">
+          <img src="images/main-preview_s@1x.png" srcset="images/main-preview_s@2x.png 2x" width="280" height="270" alt="'Cat Energy Pro' с курицей.">
+        </picture>
       </div>
     </section>
     <section class="intent">
@@ -99,9 +108,22 @@
         </dl>
         <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
         <div class="example__slider slider">
-          <!-- здесь будут коты -->
+          <div class="slider__before">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/examp-before_l@1x.png 1x, images/examp-before_l@2x.png 2x">
+              <img src="images/examp-before_s@1x.png" srcset="images/examp-before_s@2x.png 2x" width="280" height="256" alt="Борис 2 месяца назад.">
+            </picture>
+          </div>
+          <div class="slider__control"></div>
+          <div class="slider__after">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/examp-after_l@1x.png 1x, images/examp-after_l@2x.png 2x">
+              <img src="images/examp-after_s@1x.png" srcset="images/examp-after_s@2x.png 2x" width="280" height="256" alt="Борис сейчас.">
+            </picture>
+          </div>
         </div>
       </div>
+
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">

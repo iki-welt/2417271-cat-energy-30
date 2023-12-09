@@ -12,15 +12,19 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__row">
-        <a class="page-header__logo" href="index.html">
-          <img src="#" width="33" height="38" alt="Логотип 'Cat energy'.">
-          <!-- <picture class="page-header__logo-img">
-            <source srcset="#" media="#" />
-          </picture> -->
-        </a>
-        <img class="page-header__brand" src="#" width="101" height="18" alt="Cat energy.">
-        <button class="page-header__nav-toggler" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo-icon" href="index.html">
+            <img src="#" width="33" height="38" alt="Логотип 'Cat energy'.">
+            <!-- <picture class="page-header__logo-img">
+              <source srcset="#" media="#" />
+            </picture> -->
+          </a>
+          <a class="page-header__logo-type" href="index.html" tabindex="-1">
+            <img class="page-header__brand" src="#" width="101" height="18" alt="Cat energy.">
+          </a>
+        </div>
+        <button class="page-header__nav-toggler" type="button" aria-label="Открыть меню.">
+          <span class="page-header__nav-toggler-line"></span>
         </button>
       </div>
       <nav class="page-header__nav main-nav">
@@ -78,7 +82,7 @@
           </ul>
         </fieldset>
         <fieldset class="program-form__group form-group">
-          <legend class="form-group__title">Контактные данные (владельца кота)</legend>
+          <legend class="form-group__title title-highlight">Контактные данные (владельца кота)</legend>
           <ul class="form-group__list">
             <li class="form-group__item form-item">
               <label class="form-item__name" for="owner-mail">e-mail:<sup>*</sup></label>
@@ -93,12 +97,12 @@
           </ul>
         </fieldset>
         <div class="program-form__group form-group">
-          <label class="form-group__title" for="comment">Комментарий</label>
+          <label class="form-group__title title-highlight" for="comment">Комментарий</label>
           <textarea class="form-group__inp" id="comment" name="comment"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
         <fieldset class="program-form__group form-group">
-          <legend class="form-group__title">Дополнительно</legend>
+          <legend class="form-group__title title-highlight">Дополнительно</legend>
           <ul class="form-group__list">
             <li class="form-group__item form-item">
               <input class="form-item__inp" type="checkbox" id="sweetener" name="sweetener" checked>
