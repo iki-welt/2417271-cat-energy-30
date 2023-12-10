@@ -1,7 +1,42 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/global.scss";
+@import "./global/common.scss";
 @import "./global/fonts.scss";
+@import "./global/visually-hidden";
 
-/* BLOCKS */
-@import "./blocks/header.scss";
+/* MAIN BLOCKS */
+@import "./blocks/main-blocks/page-header.scss";
+@import "./blocks/main-blocks/main-nav.scss";
+@import "./blocks/main-blocks/page-main.scss";
+@import "./blocks/main-blocks/page-footer.scss";
+
+/* SECTIONS */
+@import "./blocks/main-blocks/hero.scss";
+@import "./blocks/main-blocks/intent.scss";
+@import "./blocks/main-blocks/food-concept.scss";
+@import "./blocks/main-blocks/example.scss";
+@import "./blocks/main-blocks/contacts.scss";
+@import "./blocks/main-blocks/products.scss";
+@import "./blocks/main-blocks/additional.scss";
+@import "./blocks/main-blocks/present.scss";
+
+/* SUB BLOCKS */
+@import "./blocks/main-blocks/intent-item.scss";
+@import "./blocks/main-blocks/statistic.scss";
+@import "./blocks/main-blocks/slider.scss";
+@import "./blocks/main-blocks/socials.scss";
+@import "./blocks/main-blocks/product.scss";
+@import "./blocks/main-blocks/more.scss";
+@import "./blocks/main-blocks/additional-card.scss";
+
+/* FORM */
+@import "./blocks/form/program-form.scss";
+@import "./blocks/form/form-group.scss";
+@import "./blocks/form/form-item.scss";
+
+/* FREQUENT */
+@import "./blocks/frequent/title-prime.scss";
+@import "./blocks/frequent/title-highlight.scss";
+@import "./blocks/frequent/title-catalog.scss";
+@import "./blocks/frequent/text-content-prime.scss";
+@import "./blocks/frequent/link-btn-prime.scss";
