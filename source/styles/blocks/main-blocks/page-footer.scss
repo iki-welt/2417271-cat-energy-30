@@ -1,4 +1,10 @@
-.page-footer {}
+.page-footer {
+  color: $content-color;
+  font-family: $content-font;
+  @include font-set(16px, 20px);
+
+  background-color: $sub-bg-color;
+}
 
 .page-footer__logo-link {}
 

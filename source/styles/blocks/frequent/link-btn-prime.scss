@@ -1,3 +1,19 @@
-.link-btn-prime {}
+.link-btn-prime {
+  color: $highlight-color;
+  @include font-set(16px, 20px);
+  text-transform: uppercase;
 
-.link-btn-prime--special {}
+  background-color: $brand-color;
+}
+
+.link-btn-prime--special {
+  color: $content-color;
+
+  background-color: $sub-bg-color;
+}
+
+@media (min-width: $tablet-width) {
+  .link-btn-prime {
+    @include font-set(20px, 26px);
+  }
+}

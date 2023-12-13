@@ -1,1 +1,9 @@
-.title-highlight {}
+.title-highlight {
+  @include font-set(24px, 26px);
+}
+
+@media (min-width: $tablet-width) {
+  .title-highlight {
+    @include font-set(36px, 36px);
+  }
+}

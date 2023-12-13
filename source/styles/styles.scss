@@ -1,7 +1,8 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/common.scss";
+@import "./global/mixins.scss";
 @import "./global/fonts.scss";
+@import "./global/common.scss";
 @import "./global/visually-hidden";
 
 /* MAIN BLOCKS */
@@ -11,23 +12,23 @@
 @import "./blocks/main-blocks/page-footer.scss";
 
 /* SECTIONS */
-@import "./blocks/main-blocks/hero.scss";
-@import "./blocks/main-blocks/intent.scss";
-@import "./blocks/main-blocks/food-concept.scss";
-@import "./blocks/main-blocks/example.scss";
-@import "./blocks/main-blocks/contacts.scss";
-@import "./blocks/main-blocks/products.scss";
-@import "./blocks/main-blocks/additional.scss";
-@import "./blocks/main-blocks/present.scss";
+@import "./blocks/sections/hero.scss";
+@import "./blocks/sections/intent.scss";
+@import "./blocks/sections/food-concept.scss";
+@import "./blocks/sections/example.scss";
+@import "./blocks/sections/contacts.scss";
+@import "./blocks/sections/products.scss";
+@import "./blocks/sections/additional.scss";
+@import "./blocks/sections/present.scss";
 
 /* SUB BLOCKS */
-@import "./blocks/main-blocks/intent-item.scss";
-@import "./blocks/main-blocks/statistic.scss";
-@import "./blocks/main-blocks/slider.scss";
-@import "./blocks/main-blocks/socials.scss";
-@import "./blocks/main-blocks/product.scss";
-@import "./blocks/main-blocks/more.scss";
-@import "./blocks/main-blocks/additional-card.scss";
+@import "./blocks/sub-blocks/intent-item.scss";
+@import "./blocks/sub-blocks/statistic.scss";
+@import "./blocks/sub-blocks/slider.scss";
+@import "./blocks/sub-blocks/socials.scss";
+@import "./blocks/sub-blocks/product.scss";
+@import "./blocks/sub-blocks/more.scss";
+@import "./blocks/sub-blocks/additional-card.scss";
 
 /* FORM */
 @import "./blocks/form/program-form.scss";

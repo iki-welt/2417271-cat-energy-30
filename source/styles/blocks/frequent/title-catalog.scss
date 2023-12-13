@@ -1,1 +1,11 @@
-.title-catalog {}
+.title-catalog {
+  @include font-set(16px, 20px);
+  color: #222222;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .title-catalog {
+    @include font-set(20px, 24px);
+  }
+}

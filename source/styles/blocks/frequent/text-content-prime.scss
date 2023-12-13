@@ -1,1 +1,15 @@
-.text-content-prime {}
+.text-content-prime {
+  font-family: $content-font;
+  color: $content-color;
+  @include font-set(14px, 18px);
+}
+
+@media (min-width: $tablet-width) {
+  .text-content-prime {
+    @include font-set(16px, 24px)
+  }
+
+  .text-content-prime--highlight {
+    color: $primary-color;
+  }
+}
