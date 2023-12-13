@@ -1,9 +1,26 @@
-.hero {}
+.hero {
+  background-color: $brand-color;
+}
 
-.hero__wrapper {}
+// .hero__wrapper {}
 
-.hero__title {}
+// .hero__title {}
 
-.hero__slogan {}
+.hero__slogan {
+  color: $highlight-color;
+  @include font-set(14px, 14px);
+  text-transform: uppercase;
+}
 
 .hero__form-button {}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    background-color: inherit;
+  }
+
+  .hero__slogan {
+    color: $primary-color;
+    @include font-set(20px, 20px);
+  }
+}

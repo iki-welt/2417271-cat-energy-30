@@ -1,13 +1,28 @@
-.example {}
+.example {
+  background-color: $sub-bg-color;
+}
 
-.example__wrapper {}
+// .example__wrapper {}
 
-.example__title {}
+// .example__title {}
 
-.example__text {}
+// .example__text {}
 
-.example__stat-list {}
+// .example__stat-list {}
 
-.example__price {}
+.example__price {
+  @include font-set(14px, 20px);
+  text-transform: uppercase;
+}
 
-.example__slider {}
+// .example__slider {}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .example {
+    background-color: inherit;
+  }
+
+  .example__price {
+    @include font-set(20px, 20px);
+  }
+}
