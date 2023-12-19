@@ -1,5 +1,11 @@
 // .contacts {}
 
+.contacts--dark-bg {
+  @media (max-width: $desktop-width) {
+    background-color: $sub-bg-color;
+  }
+}
+
 // .contacts__wrapper {}
 
 .contacts__title {
