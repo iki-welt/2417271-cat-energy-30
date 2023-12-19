@@ -1,6 +1,6 @@
 .text-content-prime {
   @media (min-width: $tablet-width) {
-    @include font-set(16px, 24px)
+    @include font-set(16px, 24px);
   }
 }
 

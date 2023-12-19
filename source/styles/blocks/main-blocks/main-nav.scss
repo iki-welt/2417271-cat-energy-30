@@ -1,6 +1,7 @@
 .main-nav {
   color: $primary-color;
   font-family: $title-font;
+
   @include font-set(20px, 20px);
   text-transform: uppercase;
 

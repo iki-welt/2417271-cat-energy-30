@@ -1,5 +1,5 @@
 .hero {
- background-color: $brand-color;
+  background-color: $brand-color;
 
   @media (min-width: $tablet-width) {
     background-color: inherit;
@@ -13,13 +13,15 @@
 .hero__slogan {
   color: $highlight-color;
   font-family: $title-font;
+
   @include font-set(14px, 14px);
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     color: $primary-color;
+
     @include font-set(20px, 20px);
   }
 }
 
-.hero__form-button {}
+// .hero__form-button {}

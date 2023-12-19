@@ -1,5 +1,6 @@
 .present {
   color: $highlight-color;
+
   @include font-set(16px, 20px);
 
   background-color: $brand-color;
