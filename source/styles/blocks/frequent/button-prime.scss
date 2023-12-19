@@ -1,4 +1,4 @@
-.link-btn-prime {
+.button-prime {
   color: $highlight-color;
   font-family: $title-font;
   @include font-set(16px, 20px);
@@ -11,13 +11,13 @@
   background-color: $brand-color;
 }
 
-.link-btn-prime--special {
+.button-prime--special {
   color: $content-color;
 
   background-color: $sub-bg-color;
 }
 
-.link-btn-prime--catalog {
+.button-prime--catalog {
   @media (min-width: $tablet-width) {
     @include font-set(16px, 20px);
   }
