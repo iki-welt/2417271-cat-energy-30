@@ -1,0 +1,19 @@
+.form-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+// .form-group__title {}
+
+.form-group__list {
+  @include list-default;
+}
+
+// .form-group__item {}
+
+.form-group__inp {
+  font-family: inherit;
+  font-size: inherit;
+  text-transform: inherit;
+}

@@ -1,0 +1,28 @@
+.intent-item {
+  background-color: $sub-bg-color
+}
+
+.intent-item__title {
+  color: $primary-color;
+  font-family: $title-font;
+  @include font-set(24px, 37px);
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(36px, 36px);
+  }
+}
+
+// .intent-item__text {}
+
+.intent-item__link {
+  color: $primary-color;
+  font-family: $title-font;
+  @include font-set(16px, 16px);
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(20px, normal);
+  }
+}

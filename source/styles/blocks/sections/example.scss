@@ -1,0 +1,28 @@
+.example {
+  background-color: $sub-bg-color;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    background-color: inherit;
+  }
+}
+
+// .example__wrapper {}
+
+// .example__title {}
+
+// .example__text {}
+
+// .example__stat-list {}
+
+.example__price {
+  color: $primary-color;
+  font-family: $title-font;
+  @include font-set(14px, 20px);
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @include font-set(20px, 20px);
+  }
+}
+
+// .example__slider {}
