@@ -3,6 +3,7 @@
 .additional-card__title {
   color: $primary-color;
   font-family: $title-font;
+
   @include font-set(16px, 16px);
   text-transform: uppercase;
 
@@ -13,7 +14,6 @@
 
 .additional-card__description {
   @include list-default;
-
   @include font-set(14px, 14px);
 
   @media (min-width: $tablet-width) {

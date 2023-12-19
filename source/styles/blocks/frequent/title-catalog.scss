@@ -1,6 +1,7 @@
 .title-catalog {
   color: $catalog-title-color;
   font-family: $title-font;
+
   @include font-set(16px, 20px);
   font-weight: 400;
   text-transform: uppercase;

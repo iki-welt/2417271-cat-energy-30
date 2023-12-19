@@ -1,10 +1,11 @@
-.program-form {}
+// .program-form {}
 
 // .program-form__title {}
 
 .program-form__intro {
   color: $primary-color;
   font-family: $title-font;
+
   @include font-set(14px, 18px);
   text-transform: uppercase;
 
@@ -16,6 +17,7 @@
 .program-form__set {
   font-family: $title-font;
   text-transform: uppercase;
+
   @include font-set(16px, 18px);
 
   @media (min-width: $tablet-width) {
@@ -31,6 +33,7 @@
 
 .program-form__notice {
   color: $primary-color;
+
   @include font-set(14px, 16px);
 
   @media (min-width: $tablet-width) {

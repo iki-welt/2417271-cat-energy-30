@@ -5,6 +5,7 @@
 .statistic__count {
   color: $primary-color;
   font-family: $title-font;
+
   @include font-set(24px, 24px);
   text-transform: uppercase;
 

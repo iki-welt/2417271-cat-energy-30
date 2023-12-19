@@ -17,6 +17,7 @@
 .example__price {
   color: $primary-color;
   font-family: $title-font;
+
   @include font-set(14px, 20px);
   text-transform: uppercase;
 

@@ -1,6 +1,7 @@
 .button-prime {
   color: $highlight-color;
   font-family: $title-font;
+
   @include font-set(16px, 20px);
   text-transform: uppercase;
 
