@@ -1,6 +1,10 @@
-@mixin font-set($font-size, $line-height, $font-style: normal, $font-weight: 400) {
+@mixin font-set($font-size, $line-height) {
   font-size: $font-size;
   line-height: $line-height;
-  font-style: $font-style;
-  font-weight: $font-weight;
+}
+
+@mixin list-default {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

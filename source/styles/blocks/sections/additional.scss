@@ -4,6 +4,8 @@
 
 // .additional__title {}
 
-// .dditional__list {}
+.additional__list {
+  @include list-default;
+}
 
 // .additional__item {}

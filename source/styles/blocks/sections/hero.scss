@@ -1,5 +1,9 @@
 .hero {
-  background-color: $brand-color;
+ background-color: $brand-color;
+
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+  }
 }
 
 // .hero__wrapper {}
@@ -8,19 +12,14 @@
 
 .hero__slogan {
   color: $highlight-color;
+  font-family: $title-font;
   @include font-set(14px, 14px);
   text-transform: uppercase;
-}
 
-.hero__form-button {}
-
-@media (min-width: $tablet-width) {
-  .hero {
-    background-color: inherit;
-  }
-
-  .hero__slogan {
+  @media (min-width: $tablet-width) {
     color: $primary-color;
     @include font-set(20px, 20px);
   }
 }
+
+.hero__form-button {}

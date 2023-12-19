@@ -3,22 +3,20 @@
 // .statistic__item {}
 
 .statistic__count {
+  color: $primary-color;
+  font-family: $title-font;
   @include font-set(24px, 24px);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(30px, 37px);
+  }
 }
 
 .statistic__description {
-  font-family: $content-font;
-  color: $content-color;
   @include font-set(12px, 12px);
-}
 
-@media (min-width: $tablet-width) {
-  .statistic__count {
-    @include font-set(30px, 37px);
-  }
-
-  .statistic__description {
+  @media (min-width: $tablet-width) {
     @include font-set(14px, 14px);
   }
 }

@@ -2,6 +2,8 @@
 
 // .form-group__title {}
 
-// .form-group__list {}
+.form-group__list {
+  @include list-default;
+}
 
 // .form-group__item {}

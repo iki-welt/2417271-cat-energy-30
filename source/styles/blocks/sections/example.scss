@@ -1,5 +1,9 @@
 .example {
   background-color: $sub-bg-color;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    background-color: inherit;
+  }
 }
 
 // .example__wrapper {}
@@ -11,18 +15,14 @@
 // .example__stat-list {}
 
 .example__price {
+  color: $primary-color;
+  font-family: $title-font;
   @include font-set(14px, 20px);
   text-transform: uppercase;
-}
 
-// .example__slider {}
-
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .example {
-    background-color: inherit;
-  }
-
-  .example__price {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     @include font-set(20px, 20px);
   }
 }
+
+// .example__slider {}

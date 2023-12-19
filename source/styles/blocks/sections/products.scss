@@ -2,6 +2,8 @@
 
 // .products__wrapper {}
 
-// .products__list {}
+.products__list {
+  @include list-default;
+}
 
 // .products__item {}

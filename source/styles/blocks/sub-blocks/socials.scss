@@ -1,4 +1,6 @@
-// .socials {}
+.socials {
+  @include list-default;
+}
 
 // .socials__item {}
 

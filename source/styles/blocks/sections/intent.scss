@@ -2,6 +2,8 @@
 
 // .intent__wrapper {}
 
-// .intent__list {}
+.intent__list {
+  @include list-default;
+}
 
 // .intent__item {}

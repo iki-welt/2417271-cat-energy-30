@@ -1,6 +1,25 @@
-// .main-nav {}
+.main-nav {
+  color: $primary-color;
+  font-family: $title-font;
+  @include font-set(20px, 20px);
+  text-transform: uppercase;
 
-// .main-nav__list {}
+  @media (min-width: $tablet-width) {
+    @include font-set(18px, 24px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-set(20px, 30px);
+    color: $highlight-color;
+
+
+    background-color: $brand-color;
+  }
+}
+
+.main-nav__list {
+  @include list-default;
+}
 
 // .main-nav__item {}
 

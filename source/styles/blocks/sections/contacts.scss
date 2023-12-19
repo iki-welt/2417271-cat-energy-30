@@ -3,25 +3,24 @@
 // .contacts__wrapper {}
 
 .contacts__title {
-  color: #111111;
+  color: $contacts-title-color;
+  font-family: $title-font;
   @include font-set(16px, 20px);
+  font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(20px, 26px);
+  }
 }
 
 .contacts__address {
-  font-family: $content-font;
-  color: $content-color;
   @include font-set(14px, 20px);
-}
+  font-style: normal;
 
-// .contacts__map {}
-
-@media (min-width: tablet-width) {
-  .contacts__title {
-    @include font-set(20px, 26px);
-  }
-
-  .contacts__address {
+  @media (min-width: $tablet-width) {
     @include font-set(16px, 20px);
   }
 }
+
+// .contacts__map {}

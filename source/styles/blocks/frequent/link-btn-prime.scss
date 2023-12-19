@@ -1,7 +1,12 @@
 .link-btn-prime {
   color: $highlight-color;
+  font-family: $title-font;
   @include font-set(16px, 20px);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(20px, 26px);
+  }
 
   background-color: $brand-color;
 }
@@ -12,8 +17,8 @@
   background-color: $sub-bg-color;
 }
 
-@media (min-width: $tablet-width) {
-  .link-btn-prime {
-    @include font-set(20px, 26px);
+.link-btn-prime--catalog {
+  @media (min-width: $tablet-width) {
+    @include font-set(16px, 20px);
   }
 }

@@ -7,10 +7,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: $primary-font;
-  color: $primary-color;
 
-  background-color: #ffffff;
+  color: $content-color;
+  font-family: $content-font;
+  font-size: 14px;
+  line-height: 18px;
+
+  background-color: $basic-color;
 }
 
 img {

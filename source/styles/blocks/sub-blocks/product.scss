@@ -4,7 +4,13 @@
 
 // .product__title {}
 
-// .product__description {}
+.product__description {
+  @include font-set(12px, 16px);
+
+  @media (min-width: $tablet-width) {
+    @include font-set(16px, 20px);
+  }
+}
 
 // .product__description-item {}
 

@@ -4,7 +4,9 @@
 
 // .food-concept__title {}
 
-// .food-concept__list {}
+.food-concept__list {
+  @include list-default;
+}
 
 // .food-concept__item {}
 

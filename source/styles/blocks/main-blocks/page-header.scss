@@ -1,25 +1,5 @@
-.page-header {
-  @include font-set(20px, 20px);
-  text-transform: uppercase;
-}
-
-@media (min-width: $tablet-width) {
-  .page-header {
-    @include font-set(18px, 24px);
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header {
-    @include font-set(20px, normal);
-    color: $highlight-color;
-
-    background-color: $brand-color;
-    // background-image: linear-gradient(to right, #ffffff 50%, $brand-color 50% 100%);
-  }
-}
-
-
+// .page-header {
+// background-image: linear-gradient(to right, #ffffff 50%, $brand-color 50% 100%);}
 
 // .page-header__wrapper {}
 
