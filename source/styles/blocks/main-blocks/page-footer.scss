@@ -12,4 +12,14 @@
 
 // .page-footer__developer-link {}
 
-// .page-footer__developer-icon {}
+.page-footer__developer-link--icon {
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+
+  mask-image: url(../../../images/icons/social_html-academy.svg);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+
+  background-color: $content-color;
+}
