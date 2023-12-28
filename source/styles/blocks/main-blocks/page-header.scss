@@ -1,18 +1,28 @@
-// .page-header {
-// background-image: linear-gradient(to right, #ffffff 50%, $brand-color 50% 100%);}
+.page-header__wrapper {
+  margin: 0;
+}
 
-// .page-header__wrapper {}
+.page-header__row {
+  display: grid;
+  grid-template-columns: 1fr 33px;
+  margin: 0 20px;
+  padding: 14px 0;
+}
 
-// .page-header__row {}
+.page-header__logo-wrapper {
+  display: grid;
+  grid-template-columns: 33px 1fr;
+}
 
-// .page-header__logo-wrapper {}
-
-// .page-header__logo-icon {}
-
-// .page-header__logo-type {}
+.page-header__logo-type {
+  justify-self: center;
+  align-self: center;
+}
 
 // .page-header__nav-toggler {}
 
 // .page-header__nav-toggler-line {}
 
 // .page-header__nav {}
+
+// background-image: linear-gradient(to right, #ffffff 50%, $brand-color 50% 100%);

@@ -1,15 +1,32 @@
 .button-prime {
+  display: block;
+  width: 100%;
+  padding: 10px;
+
   color: $highlight-color;
   font-family: $title-font;
 
   @include font-set(16px, 20px);
   text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
+    padding: 14px;
+
     @include font-set(20px, 26px);
   }
 
   background-color: $brand-color;
+
+  &:hover,
+  &:focus {
+    background-color: scale-color($brand-color, $saturation: +8%, $lightness: -8%);
+  }
+
+  &:active {
+    color: rgba($highlight-color, $alpha: 0.3);
+    background-color: scale-color($brand-color, $saturation: +8%, $lightness: -8%);
+  }
 }
 
 .button-prime--special {

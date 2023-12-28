@@ -6,11 +6,11 @@
 @import "./global/visually-hidden";
 
 /* MAIN BLOCKS */
+@import "./blocks/main-blocks/container.scss"; /* centering  container for content */
 @import "./blocks/main-blocks/page-header.scss";
 @import "./blocks/main-blocks/main-nav.scss";
 @import "./blocks/main-blocks/page-main.scss";
 @import "./blocks/main-blocks/page-footer.scss";
-@import "./blocks/main-blocks/container.scss"; /* centering  container for content */
 
 /* SECTIONS */
 @import "./blocks/sections/hero.scss";

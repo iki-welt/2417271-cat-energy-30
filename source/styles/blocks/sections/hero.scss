@@ -1,21 +1,37 @@
 .hero {
-  background-color: $brand-color;
+  background-image: linear-gradient(rgba($brand-color, 0.85) 0% 100%),
+  url(../../../images/index-background_s@1x.jpg),
+  linear-gradient(to right, #504f54 50%, #3f3e43 50% 100%);
+  background-size: 100% 320px, 320px 320px, 100% 320px;
+  background-repeat: no-repeat;
+  background-position: top center;
 
   @media (min-width: $tablet-width) {
     background-color: inherit;
   }
 }
 
-// .hero__wrapper {}
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-// .hero__title {}
+.hero__title {
+  margin: 27px auto 25px;
+
+  text-align: center;
+}
 
 .hero__slogan {
+  margin: 0 auto 29px;
+
   color: $highlight-color;
   font-family: $title-font;
 
   @include font-set(14px, 14px);
   text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     color: $primary-color;
@@ -24,4 +40,7 @@
   }
 }
 
-// .hero__form-button {}
+.hero__form-button {
+  order: 1;
+  margin-top: 3px;
+}
