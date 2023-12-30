@@ -30,7 +30,7 @@
 
 .intent-item--slim {
   &::after {
-    background-image: url(../../../images/icons/intent_slim.svg);
+    background-image: url("../../../images/icons/intent_slim.svg");
     background-size: 36px auto;
     background-position: center top 7px;
   }
@@ -38,7 +38,7 @@
 
 .intent-item--pro {
   &::after {
-    background-image: url(../../../images/icons/intent_pro.svg);
+    background-image: url("../../../images/icons/intent_pro.svg");
     background-size: 67px auto;
   }
 }

@@ -34,28 +34,28 @@
 
 .food-concept__item--nutrient {
   &::before {
-    background-image: url(../../../images/icons/food-concept_leaf.svg);
+    background-image: url("../../../images/icons/food-concept_leaf.svg");
     background-size: 25px 28px;
   }
 }
 
 .food-concept__item--powder {
   &::before {
-    background-image: url(../../../images/icons/food-concept_water.svg);
+    background-image: url("../../../images/icons/food-concept_water.svg");
     background-size: 26px 29px;
   }
 }
 
 .food-concept__item--diet {
   &::before {
-    background-image: url(../../../images/icons/food-concept_fork-knife.svg);
+    background-image: url("../../../images/icons/food-concept_fork-knife.svg");
     background-size: 25px 30px;
   }
 }
 
 .food-concept__item--timing {
   &::before {
-    background-image: url(../../../images/icons/food-concept_clock.svg);
+    background-image: url("../../../images/icons/food-concept_clock.svg");
     background-size: 26px 31px;
   }
 }

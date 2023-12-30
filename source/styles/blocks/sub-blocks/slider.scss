@@ -21,7 +21,6 @@ $draggler-position: 50%;
 }
 
 
-
 .slider__draggler {
   position: absolute;
   top: 50%;
@@ -47,34 +46,36 @@ $draggler-position: 50%;
     height: 108px;
     border-radius: 4px;
     background-color: $slider-color;
-}
-
-&::before {
-  bottom: 100%;
-}
-
-&::after {
-  top: 100%;
-}
-
-&:hover,
-&:focus {
-  color: $brand-color;
-  border-color: $brand-color;
-  &::before,
-  &::after {
-    background-color: $brand-color;
   }
-}
 
-&:active {
-  color: rgba($brand-color, 0.6);
-  border-color: rgba($brand-color, 0.6);
-  &::before,
-  &::after {
-    background-color: rgba($brand-color, 0.6);
+  &::before {
+    bottom: 100%;
   }
-}
+
+  &::after {
+    top: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    color: $brand-color;
+    border-color: $brand-color;
+
+    &::before,
+    &::after {
+      background-color: $brand-color;
+    }
+  }
+
+  &:active {
+    color: rgba($brand-color, 0.6);
+    border-color: rgba($brand-color, 0.6);
+
+    &::before,
+    &::after {
+      background-color: rgba($brand-color, 0.6);
+    }
+  }
 }
 
 .slider__arrows {

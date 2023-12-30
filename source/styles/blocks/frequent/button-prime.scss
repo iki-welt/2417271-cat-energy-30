@@ -18,6 +18,7 @@
 
   background-color: $brand-color;
 
+  /* stylelint-disable function-no-unknown */
   &:hover,
   &:focus {
     background-color: scale-color($brand-color, $saturation: +8%, $lightness: -8%);
@@ -27,6 +28,7 @@
     color: rgba($highlight-color, $alpha: 0.3);
     background-color: scale-color($brand-color, $saturation: +8%, $lightness: -8%);
   }
+  /* stylelint-enable function-no-unknown */
 }
 
 .button-prime--special {
