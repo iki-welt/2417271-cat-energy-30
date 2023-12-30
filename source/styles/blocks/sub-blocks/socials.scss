@@ -1,5 +1,11 @@
 .socials {
   @include list-default;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  justify-content: center;
+  gap: 24px;
 }
 
 // .socials__item {}

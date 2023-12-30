@@ -1,19 +1,61 @@
 // .food-concept {}
 
-// .food-concept__wrapper {}
+.food-concept__wrapper {
+  margin-bottom: 49px;
+}
 
-// .food-concept__title {}
+.food-concept__title {
+  margin: 0 0 40px;
+}
 
 .food-concept__list {
   @include list-default;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
-// .food-concept__item {}
+.food-concept__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 
-// .food-concept__item--nutrient {}
+  &::before {
+    content: "";
+    display: block;
+    min-width: 60px;
+    min-height: 60px;
+    background-color: $brand-color;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
 
-// .food-concept__item--powder {}
+.food-concept__item--nutrient {
+  &::before {
+    background-image: url(../../../images/icons/food-concept_leaf.svg);
+    background-size: 25px 28px;
+  }
+}
 
-// .food-concept__item--diet {}
+.food-concept__item--powder {
+  &::before {
+    background-image: url(../../../images/icons/food-concept_water.svg);
+    background-size: 26px 29px;
+  }
+}
 
-// .food-concept__item--timing {}
+.food-concept__item--diet {
+  &::before {
+    background-image: url(../../../images/icons/food-concept_fork-knife.svg);
+    background-size: 25px 30px;
+  }
+}
+
+.food-concept__item--timing {
+  &::before {
+    background-image: url(../../../images/icons/food-concept_clock.svg);
+    background-size: 26px 31px;
+  }
+}

@@ -1,6 +1,18 @@
-// .statistic {}
+.statistic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin: 0;
+}
 
-// .statistic__item {}
+.statistic__item {
+  position: relative;
+  max-width: 150px;
+  padding: 15px 0 17px;
+  text-align: center;
+  border: 1px solid $outline-color-darker;
+  border-radius: 3px;
+}
 
 .statistic__count {
   color: $primary-color;
@@ -16,6 +28,15 @@
 
 .statistic__description {
   @include font-set(12px, 12px);
+
+  position: absolute;
+  bottom: -14px;
+  right: 50%;
+  transform: translateX(50%);
+
+  margin: 0;
+
+  background-color: $sub-bg-color;
 
   @media (min-width: $tablet-width) {
     @include font-set(14px, 14px);

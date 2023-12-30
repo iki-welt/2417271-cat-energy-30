@@ -5,12 +5,28 @@
 @import "./global/common.scss";
 @import "./global/visually-hidden";
 
+/* FREQUENT */
+@import "./blocks/frequent/title-prime.scss";
+@import "./blocks/frequent/title-highlight.scss";
+@import "./blocks/frequent/title-catalog.scss";
+@import "./blocks/frequent/text-content-prime.scss";
+@import "./blocks/frequent/button-prime.scss";
+
 /* MAIN BLOCKS */
-@import "./blocks/main-blocks/container.scss"; /* centering  container for content */
+@import "./blocks/main-blocks/container.scss"; /* centering container for content */
 @import "./blocks/main-blocks/page-header.scss";
 @import "./blocks/main-blocks/main-nav.scss";
 @import "./blocks/main-blocks/page-main.scss";
 @import "./blocks/main-blocks/page-footer.scss";
+
+/* SUB BLOCKS */
+@import "./blocks/sub-blocks/intent-item.scss";
+@import "./blocks/sub-blocks/statistic.scss";
+@import "./blocks/sub-blocks/slider.scss";
+@import "./blocks/sub-blocks/socials.scss";
+@import "./blocks/sub-blocks/product.scss";
+@import "./blocks/sub-blocks/more.scss";
+@import "./blocks/sub-blocks/additional-card.scss";
 
 /* SECTIONS */
 @import "./blocks/sections/hero.scss";
@@ -22,23 +38,8 @@
 @import "./blocks/sections/additional.scss";
 @import "./blocks/sections/present.scss";
 
-/* SUB BLOCKS */
-@import "./blocks/sub-blocks/intent-item.scss";
-@import "./blocks/sub-blocks/statistic.scss";
-@import "./blocks/sub-blocks/slider.scss";
-@import "./blocks/sub-blocks/socials.scss";
-@import "./blocks/sub-blocks/product.scss";
-@import "./blocks/sub-blocks/more.scss";
-@import "./blocks/sub-blocks/additional-card.scss";
 
 /* FORM */
 @import "./blocks/form/program-form.scss";
 @import "./blocks/form/form-group.scss";
 @import "./blocks/form/form-item.scss";
-
-/* FREQUENT */
-@import "./blocks/frequent/title-prime.scss";
-@import "./blocks/frequent/title-highlight.scss";
-@import "./blocks/frequent/title-catalog.scss";
-@import "./blocks/frequent/text-content-prime.scss";
-@import "./blocks/frequent/button-prime.scss";

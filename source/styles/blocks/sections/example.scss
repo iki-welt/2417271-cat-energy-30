@@ -6,17 +6,29 @@
   }
 }
 
-// .example__wrapper {}
+.example__wrapper {
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
 
-// .example__title {}
+.example__title {
+  margin: 0 0 40px;
+}
 
-// .example__text {}
+.example__text {
+  margin: 0 0 20px;
+}
 
-// .example__stat-list {}
+.example__stat-list {
+  margin-bottom: 34px;
+}
 
 .example__price {
+  margin: 20px;
+
   color: $primary-color;
   font-family: $title-font;
+  text-align: center;
 
   @include font-set(14px, 20px);
   text-transform: uppercase;
@@ -26,4 +38,8 @@
   }
 }
 
-// .example__slider {}
+// .example__price-value {}
+
+.example__slider {
+  margin: 0 auto;
+}
