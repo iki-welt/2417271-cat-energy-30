@@ -6,11 +6,17 @@
   }
 }
 
-// .contacts__wrapper {}
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 26px 0;
+}
 
 .contacts__title {
+  margin: 0;
   color: $contacts-title-color;
   font-family: $title-font;
+
   @include font-set(16px, 20px);
   font-weight: 400;
   text-transform: uppercase;
@@ -29,4 +35,7 @@
   }
 }
 
-// .contacts__map {}
+.contacts__map {
+  width: 100vw;
+  border: none;
+}

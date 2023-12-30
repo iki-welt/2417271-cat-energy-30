@@ -5,8 +5,11 @@
 }
 
 body {
+  display: grid;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
+  grid-template-rows: auto 1fr auto;
 
   color: $content-color;
   font-family: $content-font;

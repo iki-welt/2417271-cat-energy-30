@@ -4,12 +4,54 @@
   background-color: $sub-bg-color;
 }
 
-// .page-footer__logo-link {}
+.page-footer__wrapper {
+  padding: 40px 0;
+}
 
-// .page-footer__socials {}
+.page-footer__logo-link {
+  display: block;
+  width: 130px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
 
-// .page-footer__developer {}
+.page-footer__socials {
+  border-top: 1px solid $outline-color-dark;
+  border-bottom: 1px solid $outline-color-dark;
+}
 
-// .page-footer__developer-link {}
+.page-footer__developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
 
-// .page-footer__developer-icon {}
+.page-footer__developer-link {
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__developer-link--icon {
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+
+  mask-image: url("../../../images/icons/social_html-academy.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+
+  background-color: $content-color;
+
+  &:hover,
+  &:focus {
+    background-color: $brand-color;
+  }
+
+  &:active {
+    background-color: $brand-color;
+    opacity: 0.3;
+  }
+}

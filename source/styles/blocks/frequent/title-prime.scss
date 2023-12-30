@@ -1,18 +1,17 @@
 .title-prime {
   color: $primary-color;
   font-family: $title-font;
+
   @include font-set(36px, 40px);
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
     @include font-set(60px, 60px);
   }
-
 }
 
 
 .title-prime--highlight {
-
   @media (max-width: $tablet-width) {
     color: $highlight-color;
     line-height: 40px;

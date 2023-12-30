@@ -1,9 +1,13 @@
 // .intent {}
 
-// .intent__wrapper {}
+.intent__wrapper {
+  margin: 20px;
+}
 
 .intent__list {
   @include list-default;
-}
 
-// .intent__item {}
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
