@@ -12,8 +12,9 @@
 
 
 .title-prime--highlight {
-  @media (max-width: $tablet-width) {
-    color: $highlight-color;
-    line-height: 40px;
+  color: $highlight-color;
+
+  @media (min-width: $tablet-width) {
+    color: $primary-color;
   }
 }

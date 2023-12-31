@@ -2,6 +2,10 @@
 
 .intent__wrapper {
   margin: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 45px;
+  }
 }
 
 .intent__list {
@@ -10,4 +14,8 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
 }

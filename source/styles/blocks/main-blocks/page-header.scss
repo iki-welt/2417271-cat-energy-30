@@ -1,5 +1,11 @@
 .page-header__wrapper {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 30px 0;
+  }
 }
 
 .page-header__row {
@@ -7,11 +13,30 @@
   grid-template-columns: 1fr 33px;
   margin: 0 20px;
   padding: 14px 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: min-content;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .page-header__logo-wrapper {
   display: grid;
   grid-template-columns: 33px 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: max-content max-content;
+    gap: 13px;
+  }
+}
+
+.page-header__logo-img {
+  @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 50px;
+  }
 }
 
 .page-header__logo-type {
@@ -19,7 +44,11 @@
   align-self: center;
 }
 
-// .page-header__nav-toggler {}
+.page-header__nav-toggler {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
 
 // .page-header__nav-toggler-line {}
 
