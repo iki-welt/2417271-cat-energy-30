@@ -4,10 +4,19 @@ $draggler-position: 50%;
   position: relative;
   width: 280px;
   height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .slider__before-pic {
   max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+  }
 }
 
 .slider__before {
@@ -17,7 +26,11 @@ $draggler-position: 50%;
   width: $draggler-position;
   overflow: hidden;
 
-  background-color: $sub-bg-color;
+  background-color: $sub-bg-color-light;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient($basic-color 25%, $sub-bg-color-light 25% 100%);
+  }
 }
 
 
@@ -46,6 +59,10 @@ $draggler-position: 50%;
     height: 108px;
     border-radius: 4px;
     background-color: $slider-color;
+
+    @media (min-width: $tablet-width) {
+      height: 236px;
+    }
   }
 
   &::before {

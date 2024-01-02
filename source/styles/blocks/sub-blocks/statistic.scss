@@ -3,6 +3,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+  }
 }
 
 .statistic__item {
@@ -36,9 +40,11 @@
 
   margin: 0;
 
-  background-color: $sub-bg-color;
+  background-color: $sub-bg-color-light;
 
   @media (min-width: $tablet-width) {
     @include font-set(14px, 14px);
+
+    background-color: $basic-color;
   }
 }

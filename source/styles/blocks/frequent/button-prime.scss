@@ -19,24 +19,27 @@
 
   background-color: $brand-color;
 
-  /* stylelint-disable function-no-unknown */
   &:hover,
   &:focus {
-    background-color: scale-color($brand-color, $saturation: +8%, $lightness: -8%);
+    background-color: $brand-color-dark;
   }
 
   &:active {
     color: rgba($highlight-color, $alpha: 0.3);
-    background-color: scale-color($brand-color, $saturation: +8%, $lightness: -8%);
+    background-color: $brand-color-dark;
   }
-  /* stylelint-enable function-no-unknown */
-  // Ошибка - неизветсная функция scale-color. Функция работате, использована вместо darken, т.к. при darken получается не тот зелёный цвет.
 }
 
 .button-prime--special {
   color: $content-color;
 
   background-color: $sub-bg-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $sub-bg-color-dark;
+  }
 }
 
 .button-prime--catalog {

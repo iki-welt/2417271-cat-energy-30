@@ -1,9 +1,8 @@
 .socials {
-  @include list-default;
+  list-style: none;
 
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0;
   justify-content: center;
   gap: 24px;
 }

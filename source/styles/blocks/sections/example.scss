@@ -1,30 +1,59 @@
 .example {
-  background-color: $sub-bg-color;
+  background-color: $sub-bg-color-light;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    background-color: inherit;
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient($basic-color 55%, $sub-bg-color-light 55% 100%);
   }
 }
 
 .example__wrapper {
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 100px;
+  }
 }
 
 .example__title {
   margin: 0 0 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .example__text {
+  max-width: 800px;
   margin: 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+}
+
+.example__stat {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
 }
 
 .example__stat-list {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 367px;
+    margin-bottom: 0;
+  }
 }
 
-.example__price {
-  margin: 20px;
+.example__stat-price {
+  margin: 0;
 
   color: $primary-color;
   font-family: $title-font;
@@ -33,8 +62,14 @@
   @include font-set(14px, 20px);
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
     @include font-set(20px, 20px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 9px;
   }
 }
 
