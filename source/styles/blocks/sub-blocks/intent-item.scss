@@ -45,6 +45,24 @@
       height: 270px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 52px 55px;
+
+    &::before {
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      top: 27px;
+      left: 32px;
+      width: 140px;
+      height: 140px;
+    }
+  }
 }
 
 .intent-item--slim {
@@ -57,6 +75,11 @@
       background-size: 140px auto;
       background-position: center top -14px;
     }
+
+    @media (min-width: $desktop-width) {
+      background-size: 70px auto;
+      background-position: center top -9px;
+    }
   }
 }
 
@@ -67,6 +90,10 @@
 
     @media (min-width: $tablet-width) {
       background-size: 268px auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-size: 134px auto;
     }
   }
 }
@@ -88,6 +115,11 @@
 
     @include font-set(36px, 36px);
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 214px;
+    margin-bottom: 73px;
+  }
 }
 
 .intent-item__text {
@@ -98,7 +130,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    margin-bottom: 52px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
   }
 }
 
@@ -112,9 +149,6 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    bottom: 53px;
-    left: 52px;
     padding: 4px 0;
     margin: 0;
 

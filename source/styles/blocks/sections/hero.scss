@@ -11,6 +11,19 @@
     background-color: inherit;
     background-image: none;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 694px;
+    margin-top: -120px;
+
+    background-image:
+      linear-gradient(to right, $basic-color 50%, rgba($brand-color, 0.85) 50% 100%),
+      image-set(url("../../../images/index-background_l@1x.jpg") type("image/jpg") 1x, url("../../../images/index-background_l@2x.jpg") type("image/jpg") 2x),
+      linear-gradient(to right, #504f54 50%, #504f54 50% 100%);
+    background-size: cover, contain, cover;
+    background-repeat: no-repeat;
+    background-position: top, right bottom;
+  }
 }
 
 .hero__wrapper {
@@ -23,6 +36,11 @@
     position: relative;
     display: block;
     padding-top: 65px;
+    padding-left: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 230px;
   }
 }
 
@@ -36,6 +54,11 @@
     margin-right: 200px;
     margin-bottom: 40px;
     text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 420px;
+    margin: 0 0 40px;
   }
 }
 
@@ -59,6 +82,10 @@
 
     @include font-set(20px, 20px);
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 52px;
+  }
 }
 
 .hero__form-button {
@@ -71,5 +98,17 @@
     left: 90px;
     min-width: 244px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
+}
+
+.hero__pic {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 150px;
+    right: 221px;
   }
 }
