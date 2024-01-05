@@ -1,36 +1,34 @@
 $draggler-position: 50%;
 
 .slider {
+  display: grid;
+  grid-template-columns: $draggler-position calc(100% - $draggler-position);
   position: relative;
   width: 280px;
   height: 256px;
 
+  & img {
+    max-width: 280px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 560px;
     height: 512px;
-  }
-}
 
-.slider__before-pic {
-  max-width: 280px;
-
-  @media (min-width: $tablet-width) {
-    max-width: 560px;
+    & img {
+      max-width: 560px;
+    }
   }
 }
 
 .slider__before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: $draggler-position;
   overflow: hidden;
+}
 
-  background-color: $sub-bg-color-light;
-
-  @media (min-width: $tablet-width) {
-    background-image: linear-gradient($basic-color 25%, $sub-bg-color-light 25% 100%);
-  }
+.slider__after {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
 }
 
 

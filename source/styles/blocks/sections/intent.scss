@@ -1,14 +1,14 @@
 // .intent {}
 
 .intent__wrapper {
-  margin: 20px;
+  margin-top: 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px 45px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 80px 110px 70px;
+    margin-top: 80px;
   }
 }
 
@@ -17,6 +17,7 @@
 
   display: grid;
   grid-template-columns: 1fr;
+  justify-items: center;
   gap: 20px;
 
   @media (min-width: $tablet-width) {

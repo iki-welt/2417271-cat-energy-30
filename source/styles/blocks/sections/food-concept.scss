@@ -1,14 +1,21 @@
 .food-concept {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1px)) {
     border-bottom: 1px solid $outline-color;
   }
 }
 
 .food-concept__wrapper {
-  margin-bottom: 49px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 45px;
     margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
 }
 
@@ -28,9 +35,15 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(2, 230px);
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     gap: 37px 154px;
     counter-reset: concept 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 85px;
   }
 }
 
@@ -54,6 +67,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
+    max-width: 450px;
     min-height: 280px;
     counter-increment: concept 1;
 

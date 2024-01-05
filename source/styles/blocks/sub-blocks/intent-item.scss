@@ -1,13 +1,16 @@
 .intent-item {
   position: relative;
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  padding: 30px 20px 20px 10px;
   background-color: $sub-bg-color;
 
   &::before {
     content: "";
     position: absolute;
-    top: 24px;
-    left: 20px;
+    top: 25px;
+    left: 15px;
     display: block;
     width: 50px;
     height: 50px;
@@ -18,8 +21,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 14px;
-    left: 10px;
+    top: 15px;
+    left: 5px;
     display: block;
     width: 70px;
     height: 70px;
@@ -28,26 +31,33 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 372px;
-    padding: 77px 316px 53px 52px;
+    max-width: 100%;
+    min-height: 370px;
+    padding: 75px 315px 40px 50px;
 
     &::before {
       top: 90px;
-      left: 445px;
+      right: 65px;
+      left: unset;
       width: 200px;
       height: 200px;
     }
 
     &::after {
       top: 55px;
-      left: 410px;
+      right: 30px;
+      left: unset;
       width: 270px;
       height: 270px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 52px 55px;
+    padding: 75px 60px 50px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 50px 50px;
 
     &::before {
       top: 47px;
@@ -64,6 +74,7 @@
     }
   }
 }
+
 
 .intent-item--slim {
   &::after {
@@ -99,8 +110,9 @@
 }
 
 .intent-item__title {
-  margin: 30px 0;
-  padding-left: 91px;
+  margin: 0;
+  margin-bottom: 30px;
+  margin-left: 70px;
   color: $primary-color;
   font-family: $title-font;
 
@@ -109,15 +121,14 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin-left: 0;
     margin-bottom: 24px;
-    padding: 0;
 
     @include font-set(36px, 36px);
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 214px;
+    margin-left: 162px;
     margin-bottom: 73px;
   }
 }
@@ -129,19 +140,17 @@
   border-bottom: 1px solid $outline-color-dark;
 
   @media (min-width: $tablet-width) {
+    max-width: 550px;
     padding: 0;
-    margin-bottom: 52px;
+    margin-bottom: auto;
     border: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 27px;
   }
 }
 
 .intent-item__link {
   display: block;
-  margin: 20px 0;
+  width: fit-content;
+  padding: 20px 0 10px;
   color: $primary-color;
   font-family: $title-font;
 
@@ -149,9 +158,13 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 4px 0;
-    margin: 0;
+    padding: 5px 0;
+    margin: 10px 0;
 
     @include font-set(20px, normal);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }

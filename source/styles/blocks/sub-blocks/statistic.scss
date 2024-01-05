@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
+  justify-items: center;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -11,11 +12,15 @@
 
 .statistic__item {
   position: relative;
-  max-width: 150px;
+  min-width: 125px;
   padding: 15px 0 17px;
   text-align: center;
   border: 1px solid $outline-color-darker;
   border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 160px;
+  }
 }
 
 .statistic__count {
@@ -46,5 +51,9 @@
     @include font-set(14px, 14px);
 
     background-color: $basic-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $sub-bg-color;
   }
 }
