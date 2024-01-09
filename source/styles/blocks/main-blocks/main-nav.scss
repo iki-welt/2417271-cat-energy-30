@@ -12,6 +12,11 @@
 
   @media (min-width: $desktop-width) {
     @include font-set(20px, 30px);
+  }
+}
+
+.main-nav--index {
+  @media (min-width: $desktop-width) {
     color: $highlight-color;
   }
 }
@@ -84,7 +89,9 @@
       background-color: $brand-color;
     }
   }
+}
 
+.main-nav__link--current--index {
   @media (min-width: $desktop-width) {
     &::after {
       background-color: $basic-color;

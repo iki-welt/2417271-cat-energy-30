@@ -1,11 +1,18 @@
 .title-highlight {
+  margin: 0;
+  padding: 0 20px;
+
   color: $primary-color;
   font-family: $title-font;
+
+  background-color: inherit;
 
   @include font-set(24px, 26px);
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
+    padding: 0 40px;
+
     @include font-set(36px, 36px);
   }
 }

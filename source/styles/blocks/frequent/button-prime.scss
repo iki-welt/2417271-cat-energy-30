@@ -44,6 +44,8 @@
 
 .button-prime--catalog {
   @media (min-width: $tablet-width) {
+    padding: 10px;
+
     @include font-set(16px, 20px);
   }
 }

@@ -2,10 +2,99 @@
   color: $highlight-color;
 
   @include font-set(16px, 20px);
-
-  background-color: $brand-color;
 }
 
-// .present-wrapper {}
+.present__wrapper {
+  padding-bottom: 35px;
 
-// .present__text {}
+  @media (min-width: $tablet-width) {
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+    padding: 0;
+    padding-top: 116px;
+  }
+}
+
+.present__bg-wrapper {
+  min-height: 290px;
+  max-width: 300px;
+  padding: 60px 60px 40px;
+  margin: 0 auto;
+
+  background-image:
+    linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)),
+    image-set(url("../../../images/cat-bag_s@1x.jpg") type("image/jpg") 1x, url("../../../images/cat-bag_s@2x.jpg") type("image/jpg") 2x),
+    linear-gradient(to right, $outline-color-darker 50%, $basic-color 50% 100%);
+  background-repeat: no-repeat;
+  background-size: cover, auto, cover;
+  background-position: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 50px;
+    background-image: url("../../../images/icons/stack.svg#present_gift");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 265px;
+    min-height: 200px;
+    max-width: 100%;
+    padding: 60px 125px;
+    padding-left: 75px;
+
+    background-image:
+      linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)),
+      image-set(url("../../../images/cat-bag_m@1x.jpg") type("image/jpg") 1x, url("../../../images/cat-bag_m@2x.jpg") type("image/jpg") 2x),
+      linear-gradient(to right, #3c3c3c 50%, $basic-color 50% 100%);
+
+    &::before {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    min-height: 285px;
+    max-width: 245px;
+    padding: 55px 40px 45px;
+    margin: 0;
+
+    background-image:
+      linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)),
+      image-set(url("../../../images/cat-bag_l@1x.jpg") type("image/jpg") 1x, url("../../../images/cat-bag_l@2x.jpg") type("image/jpg") 2x);
+
+    &::before {
+      margin: 0 auto 45px;
+    }
+  }
+}
+
+.present__text {
+  max-width: 220px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 180px;
+    margin: 0;
+
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 165px;
+    text-align: center;
+  }
+}

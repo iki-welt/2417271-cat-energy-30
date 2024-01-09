@@ -4,6 +4,16 @@
   }
 }
 
+.contacts--dark {
+  @media (min-width: $tablet-width) {
+    background-color: $sub-bg-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: inherit;
+  }
+}
+
 .contacts__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
