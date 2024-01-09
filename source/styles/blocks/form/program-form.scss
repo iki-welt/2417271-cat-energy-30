@@ -24,6 +24,7 @@
 }
 
 .program-form__intro {
+  max-width: 250px;
   margin: 0;
   padding-bottom: 40px;
   color: $primary-color;
@@ -35,7 +36,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 40px;
     padding-bottom: 65px;
-    max-width: 390px;
+    max-width: 350px;
 
     @include font-set(20px, 30px);
   }

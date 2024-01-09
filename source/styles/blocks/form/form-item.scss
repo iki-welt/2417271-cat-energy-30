@@ -82,4 +82,63 @@
   padding-right: 35px;
 }
 
-// .form-item__name {}
+.form-item__control-radio,
+.form-item__control-check {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 40px;
+    padding-left: 60px;
+  }
+}
+
+.form-item__mark-radio,
+.form-item__mark-check {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $outline-color-darker;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-item__mark-radio {
+  border-radius: 50%;
+}
+
+.form-item__inp-radio[type="radio"]:checked + .form-item__mark-radio {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: $brand-color;
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.form-item__inp-check[type="checkbox"]:checked + .form-item__mark-check {
+  background-image: url("../../../images/icons/stack.svg#checkbox-on");
+  background-repeat: no-repeat;
+  background-size: 26px auto;
+  background-position: center;
+}
