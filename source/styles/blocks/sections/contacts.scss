@@ -5,9 +5,7 @@
 }
 
 .contacts--dark {
-  @media (min-width: $tablet-width) {
-    background-color: $sub-bg-color;
-  }
+  background-color: $sub-bg-color;
 
   @media (min-width: $desktop-width) {
     background-color: inherit;

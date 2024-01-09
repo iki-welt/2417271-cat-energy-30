@@ -1,19 +1,121 @@
 .form-group {
   margin: 0;
-  padding: 0;
+  padding: 0 20px 20px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+    padding: 0 0 65px;
+
+    &:last-child {
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 70px;
+  }
 }
 
-// .form-group__title {}
+.form-group--half-vp {
+  @media (min-width: $desktop-width) {
+    grid-column: unset;
+  }
+}
+
+.form-group--intent {
+  padding-top: 20px;
+  margin-bottom: 25px;
+  border-top: 1px solid $outline-color-dark;
+  border-bottom: 1px solid $outline-color-dark;
+
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+    padding: 23px 27px;
+    border: 1px solid $outline-color-dark;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: unset;
+    padding: 25px 28px;
+  }
+}
+
+.form-group__title {
+  display: block;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 75px;
+  }
+}
+
+.form-group__title--check {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+  }
+}
 
 .form-group__list {
+  display: grid;
+  gap: 15px;
+  width: 100%;
+
   @include list-default;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
+}
+
+.form-group__list--owner {
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.form-group__list--check {
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
 }
 
 // .form-group__item {}
 
 .form-group__inp {
+  width: 100%;
+  min-height: 150px;
+  padding: 15px;
+
   font-family: inherit;
   font-size: inherit;
   text-transform: inherit;
+
+  border: 1px solid $outline-color-form;
+
+  resize: none;
+
+  &:hover {
+    border-color: $outline-color-darker;
+  }
+
+  &:focus {
+    border-color: $content-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 20px;
+  }
+}
+
+.form-group__inp--error {
+  border-color: $error-status;
 }

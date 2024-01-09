@@ -19,15 +19,19 @@
         <div class="page-header__logo-wrapper">
           <a class="page-header__logo-icon" href="index.html" aria-current="page">
             <picture class="page-header__logo-img">
-              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo_l.svg" width="70" height="59"/>
-              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo_m.svg" width="60" height="50"/>
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo_l.svg" width="70"
+                height="59" />
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo_m.svg" width="60"
+                height="50" />
               <img src="images/logo_s.svg" width="33" height="38" alt="Логотип 'Cat energy'.">
             </picture>
           </a>
           <a class="page-header__logo-type" href="index.html" tabindex="-1" aria-current="page">
             <picture>
-              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-type_l.svg" width="118" height="21"/>
-              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-type_l.svg" width="101" height="18"/>
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-type_l.svg" width="118"
+                height="21" />
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-type_l.svg" width="101"
+                height="18" />
               <img class="page-header__brand" src="images/logo-type_s.svg" width="101" height="18" alt="Cat energy.">
             </picture>
           </a>
@@ -57,49 +61,58 @@
         <h1 class="program-form__title title-prime">Подбор программы</h1>
         <p class="program-form__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="program-form__set" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="program-form__group form-group">
-            <legend class="visually-hidden">Основная информация о коте</legend>
-            <ul class="form-group__list">
-              <li class="form-group__item form-item">
-                <label class="form-item__name" for="cat-name">имя:<sup>*</sup></label>
-                <input class="form-item__inp" type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
-              </li>
-              <li class="form-group__item form-item">
-                <label class="form-item__name" for="cat-weight">вес (кг):<sup>*</sup></label>
-                <input class="form-item__inp" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
-              </li>
-              <li class="form-group__item form-item">
-                <label class="form-item__name" for="cat-age">возраст (лет)</label>
-                <input class="form-item__inp" type="number" id="cat-age" name="cat-age" placeholder="7">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="program-form__group form-group">
-            <legend class="visually-hidden">цель диеты</legend>
-            <ul class="form-group__list">
-              <li class="form-group__item form-item">
-                <input class="form-item__inp" type="radio" id="slim" name="intent" value="slim" checked>
-                <label class="form-item__name" for="slim">похудение</label>
-              </li>
-              <li class="form-group__item form-item">
-                <input class="form-item__inp" type="radio" id="pumping" name="intent" value="pumping">
-                <label class="form-item__name" for="pumping">набор массы</label>
-              </li>
-              <li class="form-group__item form-item">
-                <input class="form-item__inp" type="radio" id="advice" name="intent" value="need-advice">
-                <label class="form-item__name" for="advice">Не знаю (Нужен ваш совет)</label>
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="program-form__group form-group form-group--half-vp">
+              <legend class="visually-hidden">Основная информация о коте</legend>
+              <ul class="form-group__list">
+                <li class="form-group__item form-item">
+                  <label class="form-item__name" for="cat-name">имя:<sup>*</sup></label>
+                  <input class="form-item__inp" type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
+                </li>
+                <li class="form-group__item form-item">
+                  <label class="form-item__name" for="cat-weight">вес (кг):<sup>*</sup></label>
+                  <input class="form-item__inp" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
+                </li>
+                <li class="form-group__item form-item">
+                  <label class="form-item__name" for="cat-age">возраст (лет):</label>
+                  <input class="form-item__inp" type="number" id="cat-age" name="cat-age" placeholder="7">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="program-form__group form-group form-group--intent">
+              <legend class="visually-hidden">цель диеты</legend>
+              <ul class="form-group__list">
+                <li class="form-group__item form-item">
+                  <label class="form-item__control">
+                    <input class="form-item__inp-raio" type="radio" name="intent" value="slim" checked>
+                    <span class="form-item__mark-raio"></span>
+                    <span class="form-item__name">похудение</span>
+                  </label>
+                </li>
+                <li class="form-group__item form-item">
+                  <label class="form-item__control">
+                    <input class="form-item__inp-raio" type="radio" name="intent" value="pumping">
+                    <span class="form-item__mark-raio"></span>
+                    <span class="form-item__name">набор массы</span>
+                  </label>
+                </li>
+                <li class="form-group__item form-item">
+                  <label class="form-item__control">
+                    <input class="form-item__inp-raio" type="radio" name="intent" value="need-advice">
+                    <span class="form-item__mark-raio"></span>
+                    <span class="form-item__name">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
           <fieldset class="program-form__group form-group">
             <legend class="form-group__title title-highlight">Контактные данные (владельца кота)</legend>
-            <ul class="form-group__list">
-              <li class="form-group__item form-item">
+            <ul class="form-group__list form-group__list--owner">
+              <li class="form-group__item form-item form-item--mail">
                 <label class="form-item__name" for="owner-mail">e-mail:<sup>*</sup></label>
                 <input class="form-item__inp form-item__inp--mail" type="email" id="owner-mail" name="owner-mail"
                   placeholder="kuklachev@gmail.com" required>
               </li>
-              <li class="form-group__item form-item">
+              <li class="form-group__item form-item form-item--tel">
                 <label class="form-item__name" for="owner-tel">телефон:<sup>*</sup></label>
                 <input class="form-item__inp form-item__inp--tel" type="tel" id="owner-tel" name="owner-tel"
                   placeholder="8 (960) 900-60-90" required>
@@ -112,38 +125,52 @@
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
           <fieldset class="program-form__group form-group">
-            <legend class="form-group__title title-highlight">Дополнительно</legend>
-            <ul class="form-group__list">
+            <legend class="form-group__title title-highlight form-group__title--check">Дополнительно</legend>
+            <ul class="form-group__list form-group__list--check">
               <li class="form-group__item form-item">
-                <input class="form-item__inp" type="checkbox" id="sweetener" name="sweetener" checked>
-                <label class="form-item__name" for="sweetener">сахарозаменитель</label>
+                <label class="form-item__control">
+                  <input class="form-item__inp-check" type="checkbox" name="sweetener" checked>
+                  <span class="form-item__mark-check"></span>
+                  <span class="form-item__name">сахарозаменитель</span>
+                </label>
               </li>
               <li class="form-group__item form-item">
-                <input class="form-item__inp" type="checkbox" id="water" name="water">
-                <label class="form-item__name" for="water">питьевая вода</label>
+                <label class="form-item__control">
+                  <input class="form-item__inp-check" type="checkbox" name="water">
+                  <span class="form-item__mark-check"></span>
+                  <span class="form-item__name">питьевая вода</span>
+                </label>
               </li>
               <li class="form-group__item form-item">
-                <input class="form-item__inp" type="checkbox" id="milk" name="milk">
-                <label class="form-item__name" for="milk">молоко</label>
+                <label class="form-item__control">
+                  <input class="form-item__inp-check" type="checkbox" name="milk">
+                  <span class="form-item__mark-check"></span>
+                  <span class="form-item__name">молоко</span>
+                </label>
               </li>
               <li class="form-group__item form-item">
-                <input class="form-item__inp" type="checkbox" id="vitamins" name="vitamins">
-                <label class="form-item__name" for="vitamins">витамины</label>
+                <label class="form-item__control">
+                  <input class="form-item__inp-check" type="checkbox" name="vitamins">
+                  <span class="form-item__mark-check"></span>
+                  <span class="form-item__name">витамины</span>
+                </label>
               </li>
             </ul>
           </fieldset>
           <button class="program-form__button button-prime" type="submit">отправить заявку</button>
+          <small class="program-form__notice"><sup>*</sup> — Обязательные поля</small>
         </form>
-        <small class="program-form__notice"><sup>*</sup> — Обязательные поля</small>
       </div>
     </section>
     <section class="contacts contacts--dark">
       <div class="contacts__wrapper container">
         <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-        <address class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="contacts__city">Санкт-Петербург</span></address>
+        <address class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span
+            class="contacts__city">Санкт-Петербург</span></address>
       </div>
       <div class="contacts__map-wrapper">
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728633!2d30.320472477571837!3d59.93871647491507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1704482740620!5m2!1sru!2sru"></iframe>
+        <iframe class="contacts__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728633!2d30.320472477571837!3d59.93871647491507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1704482740620!5m2!1sru!2sru"></iframe>
       </div>
     </section>
   </main>
@@ -154,18 +181,23 @@
       </a>
       <ul class="page-footer__socials socials">
         <li class="socials__item">
-          <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" aria-label="Cat Energy в 'В контакте'."></a>
+          <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy"
+            aria-label="Cat Energy в 'В контакте'."></a>
         </li>
         <li class="socials__item">
-          <a class="socials__link socials__link--yt" href="https://www.youtube.com/user/htmlacademyru" aria-label="Cat Energy в 'You Tube'."></a>
+          <a class="socials__link socials__link--yt" href="https://www.youtube.com/user/htmlacademyru"
+            aria-label="Cat Energy в 'You Tube'."></a>
         </li>
         <li class="socials__item">
-          <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy" aria-label="Cat Energy в 'Telegram'."></a>
+          <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy"
+            aria-label="Cat Energy в 'Telegram'."></a>
         </li>
       </ul>
       <div class="page-footer__developer">
-        <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт 'HTML Academy'.">HTML Academy</a>
-        <a class="page-footer__developer-link page-footer__developer-link--icon" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт 'HTML Academy'."></a>
+        <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Сайт 'HTML Academy'.">HTML Academy</a>
+        <a class="page-footer__developer-link page-footer__developer-link--icon"
+          href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт 'HTML Academy'."></a>
       </div>
     </div>
   </footer>

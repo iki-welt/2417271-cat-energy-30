@@ -60,10 +60,31 @@
   }
 }
 
+.page-header__logo-icon {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .page-header__logo-type {
   justify-self: center;
   align-self: center;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
+
 
 .page-header__nav-toggler {
   @media (min-width: $tablet-width) {
