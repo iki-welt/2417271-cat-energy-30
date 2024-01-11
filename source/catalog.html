@@ -32,11 +32,13 @@
             </picture>
           </a>
         </div>
-        <button class="page-header__nav-toggler" type="button" aria-label="Открыть меню.">
-          <span class="page-header__nav-toggler-line"></span>
+        <button class="page-header__nav-toggler js-toggler js-toggler--no-js" type="button" aria-label="Открыть меню.">
+          <span class="js-toggler-line"></span>
+          <span class="js-toggler-line"></span>
+          <span class="js-toggler-line"></span>
         </button>
       </div>
-      <nav class="page-header__nav main-nav">
+      <nav class="page-header__nav main-nav main-nav--index main-nav--js main-nav--no-js">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link " href="index.html">главная</a>
@@ -239,7 +241,9 @@
     <div class="desktop-present-wrapper">
       <section class="additional">
         <div class="additional__wrapper container">
-          <h2 class="additional__title title-highlight">Дополнительные товары</h2>
+          <h2 class="additional__title title-highlight">
+            <span>Дополнительные товары</span>
+          </h2>
           <ul class="additional__list">
             <li class="additional__item additional-card">
               <h3 class="additional-card__title">Сахарозаменитель</h3>
@@ -317,6 +321,7 @@
       </div>
     </div>
   </footer>
+  <script src="scripts/menu.js"></script>
 </body>
 
 </html>

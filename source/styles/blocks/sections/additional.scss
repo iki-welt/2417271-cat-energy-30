@@ -12,7 +12,15 @@
   }
 }
 
-// .additional__title {}
+.additional__title {
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
 
 .additional__list {
   @include list-default;

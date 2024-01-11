@@ -62,6 +62,20 @@
   align-items: center;
   padding-top: 20px;
 
+  &:has(a:hover, a:focus) {
+    .page-footer__developer-link--icon {
+      background-color: $brand-color;
+    }
+  }
+
+  &:has(a:active) {
+    opacity: 0.3;
+
+    .page-footer__developer-link--icon {
+      background-color: $brand-color;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     justify-self: end;
     gap: 23px;
@@ -69,30 +83,15 @@
   }
 }
 
-.page-footer__developer-link {
-  &:active {
-    opacity: 0.3;
-  }
-}
 
 .page-footer__developer-link--icon {
   display: inline-block;
   width: 27px;
   height: 34px;
 
-  mask-image: url("../../../images/icons/social_html-academy.svg");
+  mask-image: url("../../../images/icons/stack.svg#social_html-academy");
   mask-size: contain;
   mask-repeat: no-repeat;
 
   background-color: $content-color;
-
-  &:hover,
-  &:focus {
-    background-color: $brand-color;
-  }
-
-  &:active {
-    background-color: $brand-color;
-    opacity: 0.3;
-  }
 }

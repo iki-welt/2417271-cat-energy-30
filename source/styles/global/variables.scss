@@ -3,6 +3,8 @@ $desktop-width: 1440px;
 $tablet-width: 768px;
 $mobile-width: 320px;
 
+$mobile-only-width: 765px;
+
 // FONTS
 $content-font: "Lato", "Arial", sans-serif;
 $title-font: "Oswald", "Arial", sans-serif;
@@ -10,8 +12,8 @@ $title-font: "Oswald", "Arial", sans-serif;
 //  TEXT
 $primary-color: #000000;
 $content-color: #444444;
-$contacts-title-color: #111111;
-$catalog-title-color: #222222;
+$content-color-dark: #222222;
+$content-color-darker: #111111;
 $highlight-color: #ffffff;
 
 // BACKGROUND
@@ -27,4 +29,5 @@ $outline-color: #e6e6e6;
 $outline-color-form: #e7e7e7;
 $outline-color-dark: #d9d9d9;
 $outline-color-darker: #cdcdcd;
+$outline-color-darkest: #bababa;
 $slider-color: #666666;

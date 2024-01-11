@@ -32,11 +32,13 @@
             </picture>
           </a>
         </div>
-        <button class="page-header__nav-toggler" type="button" aria-label="Открыть меню.">
-          <span class="page-header__nav-toggler-line"></span>
+        <button class="page-header__nav-toggler js-toggler js-toggler--no-js" type="button" aria-label="Открыть меню.">
+          <span class="js-toggler-line"></span>
+          <span class="js-toggler-line"></span>
+          <span class="js-toggler-line"></span>
         </button>
       </div>
-      <nav class="page-header__nav main-nav main-nav--index">
+      <nav class="page-header__nav main-nav main-nav--index main-nav--js main-nav--no-js">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current main-nav__link--current--index" href="index.html" aria-current="page">главная</a>
@@ -174,6 +176,7 @@
       </div>
     </div>
   </footer>
+  <script src="scripts/menu.js"></script>
 </body>
 
 </html>

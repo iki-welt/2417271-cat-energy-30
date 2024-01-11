@@ -23,6 +23,11 @@
 }
 
 .page-header__wrapper {
+  @media (max-width: $mobile-only-width) {
+    padding: 0;
+    position: relative;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -38,7 +43,14 @@
 .page-header__row {
   display: grid;
   grid-template-columns: 1fr 33px;
-  padding: 14px 0;
+  padding: 14px 20px;
+
+  @media (max-width: $mobile-only-width) {
+    position: relative;
+    z-index: 1;
+
+    background-color: $basic-color;
+  }
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -53,6 +65,14 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: max-content max-content;
     gap: 13px;
+
+    &:has(a:hover, a:focus) {
+      opacity: 0.8;
+    }
+
+    &:has(a:active) {
+      opacity: 0.6;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -64,10 +84,18 @@
   &:hover,
   &:focus {
     opacity: 0.8;
+
+    @media (min-width: $tablet-width) {
+      opacity: 1;
+    }
   }
 
   &:active {
     opacity: 0.6;
+
+    @media (min-width: $tablet-width) {
+      opacity: 1;
+    }
   }
 }
 
@@ -78,32 +106,17 @@
   &:hover,
   &:focus {
     opacity: 0.8;
+
+    @media (min-width: $tablet-width) {
+      opacity: 1;
+    }
   }
 
   &:active {
     opacity: 0.6;
-  }
-}
 
-
-.page-header__nav-toggler {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-// .page-header__nav-toggler-line {}
-
-.page-header__nav {
-  margin-left: -20px;
-  margin-right: -20px;
-
-  @media (min-width: $tablet-width) {
-    width: 70%;
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 50%;
+    @media (min-width: $tablet-width) {
+      opacity: 1;
+    }
   }
 }

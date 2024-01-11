@@ -17,7 +17,7 @@
     display: block;
     width: 20px;
     height: 20px;
-    background-color: $primary-color;
+    background-color: $content-color-dark;
     mask-repeat: no-repeat;
     mask-size: 20px auto;
   }
@@ -28,9 +28,15 @@
     }
   }
 
-  &:has(.form-item__inp--error) {
+  &:has(.form-item__inp:invalid) {
     &::before {
       background-color: $error-status;
+    }
+  }
+
+  &:has(.form-item__inp:invalid:placeholder-shown) {
+    &::before {
+      background-color: $content-color-dark;
     }
   }
 }
@@ -68,13 +74,17 @@
     border-color: $content-color;
   }
 
+  &:invalid {
+    border-color: $error-status;
+  }
+
+  &:invalid:placeholder-shown {
+    border-color: $outline-color-form;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 10px 20px;
   }
-}
-
-.form-item__inp--error {
-  border-color: $error-status;
 }
 
 .form-item__inp--mail,
@@ -82,13 +92,27 @@
   padding-right: 35px;
 }
 
-.form-item__control-radio,
-.form-item__control-check {
+.form-item__control {
   position: relative;
   display: flex;
   align-items: center;
   min-height: 30px;
   padding-left: 45px;
+
+  &:hover,
+  &:focus {
+    .form-item__mark {
+      border-color: $outline-color-darkest;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .form-item__mark {
+      border-color: $outline-color-darkest;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 40px;
@@ -96,8 +120,7 @@
   }
 }
 
-.form-item__mark-radio,
-.form-item__mark-check {
+.form-item__mark {
   position: absolute;
   left: 0;
   top: 0;
@@ -112,11 +135,11 @@
   }
 }
 
-.form-item__mark-radio {
+.form-item__mark--radio {
   border-radius: 50%;
 }
 
-.form-item__inp-radio[type="radio"]:checked + .form-item__mark-radio {
+.form-item__inp[type="radio"]:checked + .form-item__mark {
   &::after {
     content: "";
     position: absolute;
@@ -136,7 +159,7 @@
   }
 }
 
-.form-item__inp-check[type="checkbox"]:checked + .form-item__mark-check {
+.form-item__inp[type="checkbox"]:checked + .form-item__mark {
   background-image: url("../../../images/icons/stack.svg#checkbox-on");
   background-repeat: no-repeat;
   background-size: 26px auto;

@@ -38,7 +38,7 @@
 
 .contacts__title {
   margin: 0;
-  color: $contacts-title-color;
+  color: $content-color-darker;
   font-family: $title-font;
 
   @include font-set(16px, 20px);

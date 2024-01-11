@@ -36,11 +36,13 @@
             </picture>
           </a>
         </div>
-        <button class="page-header__nav-toggler" type="button" aria-label="Открыть меню.">
-          <span class="page-header__nav-toggler-line"></span>
+        <button class="page-header__nav-toggler js-toggler js-toggler--no-js" type="button" aria-label="Открыть меню.">
+          <span class="js-toggler-line"></span>
+          <span class="js-toggler-line"></span>
+          <span class="js-toggler-line"></span>
         </button>
       </div>
-      <nav class="page-header__nav main-nav">
+      <nav class="page-header__nav main-nav main-nav--index main-nav--js main-nav--no-js">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">главная</a>
@@ -82,30 +84,32 @@
               <legend class="visually-hidden">цель диеты</legend>
               <ul class="form-group__list">
                 <li class="form-group__item form-item">
-                  <label class="form-item__control-radio">
-                    <input class="form-item__inp-radio visually-hidden" type="radio" name="intent" value="slim" checked>
-                    <span class="form-item__mark-radio"></span>
+                  <label class="form-item__control">
+                    <input class="form-item__inp visually-hidden" type="radio" name="intent" value="slim" checked>
+                    <span class="form-item__mark form-item__mark--radio"></span>
                     <span class="form-item__name">похудение</span>
                   </label>
                 </li>
                 <li class="form-group__item form-item">
-                  <label class="form-item__control-radio">
-                    <input class="form-item__inp-radio visually-hidden" type="radio" name="intent" value="pumping">
-                    <span class="form-item__mark-radio"></span>
+                  <label class="form-item__control">
+                    <input class="form-item__inp visually-hidden" type="radio" name="intent" value="pumping">
+                    <span class="form-item__mark form-item__mark--radio"></span>
                     <span class="form-item__name">набор массы</span>
                   </label>
                 </li>
                 <li class="form-group__item form-item">
-                  <label class="form-item__control-radio">
-                    <input class="form-item__inp-radio visually-hidden" type="radio" name="intent" value="need-advice">
-                    <span class="form-item__mark-radio"></span>
+                  <label class="form-item__control">
+                    <input class="form-item__inp visually-hidden" type="radio" name="intent" value="need-advice">
+                    <span class="form-item__mark form-item__mark--radio"></span>
                     <span class="form-item__name">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
           <fieldset class="program-form__group form-group">
-            <legend class="form-group__title title-highlight">Контактные данные (владельца кота)</legend>
+            <legend class="form-group__title title-highlight">
+              <span>Контактные данные (владельца кота)</span>
+            </legend>
             <ul class="form-group__list form-group__list--owner">
               <li class="form-group__item form-item form-item--mail">
                 <label class="form-item__name" for="owner-mail">e-mail:<sup>*</sup></label>
@@ -120,38 +124,42 @@
             </ul>
           </fieldset>
           <div class="program-form__group form-group">
-            <label class="form-group__title title-highlight" for="comment">Комментарий</label>
+            <label class="form-group__title title-highlight" for="comment">
+              <span>Комментарий</span>
+            </label>
             <textarea class="form-group__inp" id="comment" name="comment"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
           <fieldset class="program-form__group form-group">
-            <legend class="form-group__title title-highlight form-group__title--check">Дополнительно</legend>
+            <legend class="form-group__title title-highlight form-group__title--check">
+              <span>Дополнительно</span>
+            </legend>
             <ul class="form-group__list form-group__list--check">
               <li class="form-group__item form-item">
-                <label class="form-item__control-check">
-                  <input class="form-item__inp-check visually-hidden" type="checkbox" name="sweetener" checked>
-                  <span class="form-item__mark-check"></span>
+                <label class="form-item__control">
+                  <input class="form-item__inp visually-hidden" type="checkbox" name="sweetener" checked>
+                  <span class="form-item__mark"></span>
                   <span class="form-item__name">сахарозаменитель</span>
                 </label>
               </li>
               <li class="form-group__item form-item">
-                <label class="form-item__control-check">
-                  <input class="form-item__inp-check visually-hidden" type="checkbox" name="water">
-                  <span class="form-item__mark-check"></span>
+                <label class="form-item__control">
+                  <input class="form-item__inp visually-hidden" type="checkbox" name="water">
+                  <span class="form-item__mark"></span>
                   <span class="form-item__name">питьевая вода</span>
                 </label>
               </li>
               <li class="form-group__item form-item">
-                <label class="form-item__control-check">
-                  <input class="form-item__inp-check visually-hidden" type="checkbox" name="milk">
-                  <span class="form-item__mark-check"></span>
+                <label class="form-item__control">
+                  <input class="form-item__inp visually-hidden" type="checkbox" name="milk">
+                  <span class="form-item__mark"></span>
                   <span class="form-item__name">молоко</span>
                 </label>
               </li>
               <li class="form-group__item form-item">
-                <label class="form-item__control-check">
-                  <input class="form-item__inp-check visually-hidden" type="checkbox" name="vitamins">
-                  <span class="form-item__mark-check"></span>
+                <label class="form-item__control">
+                  <input class="form-item__inp visually-hidden" type="checkbox" name="vitamins">
+                  <span class="form-item__mark"></span>
                   <span class="form-item__name">витамины</span>
                 </label>
               </li>
@@ -201,6 +209,7 @@
       </div>
     </div>
   </footer>
+  <script src="scripts/menu.js"></script>
 </body>
 
 </html>
