@@ -148,7 +148,9 @@
 }
 
 .intent-item__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 15px;
   width: fit-content;
   padding: 20px 0 10px;
   color: $primary-color;
@@ -157,14 +159,61 @@
   @include font-set(16px, 16px);
   text-transform: uppercase;
 
+  &::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 10px;
+    color: $primary-color;
+    background-image: url("../../../images/icons/stack.svg#intent_arrow");
+    background-repeat: no-repeat;
+    background-size: 32px auto;
+    background-position: center left -10px;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      animation: bganimation 1s;
+      background-position: center left;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      background-position: center left;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 5px 0;
     margin: 10px 0;
+    gap: 25px;
 
     @include font-set(20px, normal);
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+  }
+}
+
+@keyframes bganimation {
+  0% {
+    background-position: center left -10px;
+  }
+
+  50% {
+    background-position: center left;
+  }
+
+  70% {
+    background-position: center left -5px;
+  }
+
+  100% {
+    background-position: center left;
   }
 }

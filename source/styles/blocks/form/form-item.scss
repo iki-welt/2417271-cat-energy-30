@@ -66,20 +66,28 @@
     appearance: none;
   }
 
+  &:invalid {
+    border-color: $error-status;
+
+    &:placeholder-shown {
+      border-color: $outline-color-form;
+
+      &:hover {
+        border-color: $outline-color-darker;
+      }
+
+      &:focus {
+        border-color: $content-color;
+      }
+    }
+  }
+
   &:hover {
     border-color: $outline-color-darker;
   }
 
   &:focus {
     border-color: $content-color;
-  }
-
-  &:invalid {
-    border-color: $error-status;
-  }
-
-  &:invalid:placeholder-shown {
-    border-color: $outline-color-form;
   }
 
   @media (min-width: $tablet-width) {
