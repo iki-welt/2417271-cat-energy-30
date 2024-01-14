@@ -58,6 +58,12 @@
   }
 }
 
+.page-header__row--inner {
+  @media (max-width: $mobile-only-width) {
+    border-bottom: 1px solid $outline-color-dark;
+  }
+}
+
 .page-header__logo-wrapper {
   display: grid;
   grid-template-columns: 33px 1fr;

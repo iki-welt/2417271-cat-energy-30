@@ -24,7 +24,7 @@
   }
 }
 
-.product__pic-wrapper {
+.product__pic-link {
   grid-row: span 2;
   display: flex;
   justify-content: center;
@@ -45,10 +45,26 @@
 .product__title {
   max-width: 90px;
   margin: 0;
-  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     max-width: 150px;
+  }
+}
+
+.product__title-link {
+  width: fit-content;
+  margin-bottom: 14px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
 }
