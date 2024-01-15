@@ -72,12 +72,11 @@
   }
 }
 
-// .program-form__group {}
-
 .program-form__button {
-  @include button-default;
   width: calc(100% - 40px);
   margin: 15px 20px 20px;
+
+  border: none;
 
   @media (min-width: $tablet-width) {
     width: 100%;
