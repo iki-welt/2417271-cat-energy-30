@@ -13,7 +13,11 @@
       z-index: -1;
       background-image:
         linear-gradient(to right, $basic-color 50%, rgba($brand-color, 0.85) 50% 100%),
-        image-set(url("../../../images/index-background_l@1x.jpg") type("image/jpg") 1x, url("../../../images/index-background_l@2x.jpg") type("image/jpg") 2x),
+        image-set(
+          url("../../../images/index-background_l@1x.webp") type("image/webp") 1x,
+          url("../../../images/index-background_l@2x.webp") type("image/webp") 2x,
+          url("../../../images/index-background_l@1x.jpg") type("image/jpg") 1x,
+          url("../../../images/index-background_l@2x.jpg") type("image/jpg") 2x),
         linear-gradient(to right, #504f54 50%, #504f54 50% 100%);
       background-size: cover, auto, cover;
       background-repeat: no-repeat;
@@ -42,7 +46,7 @@
 
 .page-header__row {
   display: grid;
-  grid-template-columns: 1fr 33px;
+  grid-template-columns: 33px 1fr 33px;
   padding: 14px 20px;
 
   @media (max-width: $mobile-only-width) {
@@ -64,44 +68,14 @@
   }
 }
 
-.page-header__logo-wrapper {
-  display: grid;
-  grid-template-columns: 33px 1fr;
-
-  @media (min-width: $tablet-width) {
-    grid-template-columns: max-content max-content;
-    gap: 13px;
-
-    &:has(a:hover, a:focus) {
-      opacity: 0.8;
-    }
-
-    &:has(a:active) {
-      opacity: 0.6;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    gap: 14px;
-  }
-}
-
 .page-header__logo-icon {
   &:hover,
   &:focus {
     opacity: 0.8;
-
-    @media (min-width: $tablet-width) {
-      opacity: 1;
-    }
   }
 
   &:active {
     opacity: 0.6;
-
-    @media (min-width: $tablet-width) {
-      opacity: 1;
-    }
   }
 }
 
@@ -112,17 +86,13 @@
   &:hover,
   &:focus {
     opacity: 0.8;
-
-    @media (min-width: $tablet-width) {
-      opacity: 1;
-    }
   }
 
   &:active {
     opacity: 0.6;
+  }
 
-    @media (min-width: $tablet-width) {
-      opacity: 1;
-    }
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

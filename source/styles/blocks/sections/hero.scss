@@ -2,8 +2,8 @@
   background-image:
     linear-gradient(rgba($brand-color, 0.85) 0% 100%),
     image-set(url("../../../images/index-background_s@1x.jpg") type("image/jpg") 1x, url("../../../images/index-background_s@2x.jpg") type("image/jpg") 2x),
-    linear-gradient(to right, #504f54 50%, #3f3e43 50% 100%);
-  background-size: 100% 320px, 320px 320px, 100% 320px;
+    linear-gradient(to right, #504f54, #3f3e43);
+  background-size: cover, 320px 320px, cover;
   background-repeat: no-repeat;
   background-position: top center;
 

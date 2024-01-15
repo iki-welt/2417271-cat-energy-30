@@ -2,7 +2,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 600px;
   padding: 30px 20px 20px 10px;
   background-color: $sub-bg-color;
 
@@ -31,7 +30,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 100%;
     min-height: 370px;
     padding: 75px 315px 40px 50px;
 
@@ -50,10 +48,6 @@
       width: 270px;
       height: 270px;
     }
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 75px 60px 50px 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -148,10 +142,11 @@
 }
 
 .intent-item__link {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 35px;
   align-items: center;
   gap: 15px;
-  width: fit-content;
+  max-width: 550px;
   padding: 20px 0 10px;
   color: $primary-color;
   font-family: $title-font;
@@ -201,19 +196,11 @@
 }
 
 @keyframes bganimation {
-  0% {
+  from {
     background-position: center left -10px;
   }
 
-  50% {
-    background-position: center left;
-  }
-
-  70% {
-    background-position: center left -5px;
-  }
-
-  100% {
+  to {
     background-position: center left;
   }
 }

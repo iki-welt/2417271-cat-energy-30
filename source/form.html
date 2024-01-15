@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -16,26 +18,16 @@
   <header class="page-header">
     <div class="page-header__wrapper container">
       <div class="page-header__row page-header__row--inner">
-        <div class="page-header__logo-wrapper">
-          <a class="page-header__logo-icon" href="index.html" aria-current="page">
-            <picture class="page-header__logo-img">
-              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo_l.svg" width="70"
-                height="59" />
-              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo_m.svg" width="60"
-                height="50" />
-              <img src="images/logo_s.svg" width="33" height="38" alt="Логотип 'Cat energy'.">
-            </picture>
-          </a>
-          <a class="page-header__logo-type" href="index.html" tabindex="-1" aria-current="page">
-            <picture>
-              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-type_l.svg" width="118"
-                height="21" />
-              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-type_l.svg" width="101"
-                height="18" />
-              <img class="page-header__brand" src="images/logo-type_s.svg" width="101" height="18" alt="Cat energy.">
-            </picture>
-          </a>
-        </div>
+        <a class="page-header__logo-icon" href="index.html">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo_l.svg" width="202" height="59"/>
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo_m.svg" width="174" height="50"/>
+            <img class="page-header__logo-img" src="images/logo_s.svg" width="33" height="38" alt="Логотип 'Cat energy'.">
+          </picture>
+        </a>
+        <a class="page-header__logo-type" href="index.html" tabindex="-1">
+            <img class="page-header__brand" src="images/logo-type_s.svg" width="101" height="18" alt="Cat energy.">
+        </a>
         <button class="page-header__nav-toggler js-toggler js-toggler--no-js" type="button" aria-label="Открыть меню.">
           <span class="js-toggler-line"></span>
           <span class="js-toggler-line"></span>

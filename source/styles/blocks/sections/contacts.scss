@@ -14,8 +14,8 @@
 
 .contacts__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: min-content min-content;
+  justify-content: space-between;
   align-items: center;
   padding-top: 26px;
   padding-bottom: 26px;
@@ -28,7 +28,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: calc(50vw - 610px);
     gap: 90px;
     padding: 60px 80px;
     max-width: 565px;
@@ -53,12 +53,13 @@
 .contacts__address {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   @include font-set(14px, 20px);
   font-style: normal;
 
   @media (min-width: $tablet-width) {
+    gap: 20px;
+
     @include font-set(16px, 20px);
     text-align: end;
   }

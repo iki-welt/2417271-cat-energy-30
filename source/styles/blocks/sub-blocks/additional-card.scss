@@ -23,12 +23,24 @@
   }
 }
 
+.additional-card__title-link {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .additional-card__title {
   margin: 0;
   color: $primary-color;
   font-family: $title-font;
 
   @include font-set(16px, 16px);
+  font-weight: 400;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {

@@ -26,8 +26,11 @@
 
   background-image:
     linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)),
-    image-set(url("../../../images/cat-bag_s@1x.jpg") type("image/jpg") 1x, url("../../../images/cat-bag_s@2x.jpg") type("image/jpg") 2x),
-    linear-gradient(to right, $outline-color-darker 50%, $basic-color 50% 100%);
+    image-set(url("../../../images/cat-bag_s@1x.webp") type("image/webp") 1x,
+      url("../../../images/cat-bag_s@2x.webp") type("image/webp") 2x,
+      url("../../../images/cat-bag_s@1x.jpg") type("image/jpg") 1x,
+      url("../../../images/cat-bag_s@2x.jpg") type("image/jpg") 2x),
+    linear-gradient(to right, $outline-color-darker, $basic-color);
   background-repeat: no-repeat;
   background-size: cover, auto, cover;
   background-position: center;
@@ -55,8 +58,11 @@
 
     background-image:
       linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)),
-      image-set(url("../../../images/cat-bag_m@1x.jpg") type("image/jpg") 1x, url("../../../images/cat-bag_m@2x.jpg") type("image/jpg") 2x),
-      linear-gradient(to right, #3c3c3c 50%, $basic-color 50% 100%);
+      image-set(url("../../../images/cat-bag_m@1x.webp") type("image/webp") 1x,
+        url("../../../images/cat-bag_m@2x.webp") type("image/webp") 2x,
+        url("../../../images/cat-bag_m@1x.jpg") type("image/jpg") 1x,
+        url("../../../images/cat-bag_m@2x.jpg") type("image/jpg") 2x),
+      linear-gradient(to right, #3c3c3c, $basic-color);
 
     &::before {
       margin: 0;
@@ -72,7 +78,10 @@
 
     background-image:
       linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)),
-      image-set(url("../../../images/cat-bag_l@1x.jpg") type("image/jpg") 1x, url("../../../images/cat-bag_l@2x.jpg") type("image/jpg") 2x);
+      image-set(url("../../../images/cat-bag_l@1x.webp") type("image/webp") 1x,
+        url("../../../images/cat-bag_l@2x.webp") type("image/webp") 2x,
+        url("../../../images/cat-bag_l@1x.jpg") type("image/jpg") 1x,
+        url("../../../images/cat-bag_l@2x.jpg") type("image/jpg") 2x);
 
     &::before {
       margin: 0 auto 45px;
