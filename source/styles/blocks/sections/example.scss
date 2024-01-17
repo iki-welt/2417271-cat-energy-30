@@ -1,7 +1,11 @@
 .example {
+  padding-top: 25px;
+  padding-bottom: 40px;
+
   background-color: $sub-bg-color-light;
 
   @media (min-width: $tablet-width) {
+    padding: 0 0 105px;
     background-image: linear-gradient($basic-color 57%, $sub-bg-color-light 57% 100%);
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,23 +13,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 75px;
     background-image: linear-gradient($basic-color 23%, $sub-bg-color 23% 100%);
   }
 }
 
 .example__wrapper {
-  padding-top: 25px;
-  padding-bottom: 40px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 45px;
-    padding-bottom: 100px;
-  }
-
   @media (min-width: $desktop-width) {
     position: relative;
-    padding-top: 0;
-    padding-bottom: 85px;
   }
 }
 
@@ -52,7 +47,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 500px;
+    max-width: 465px;
     margin-bottom: 70px;
   }
 }

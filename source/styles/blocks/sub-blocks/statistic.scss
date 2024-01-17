@@ -48,6 +48,9 @@
   background-color: $sub-bg-color-light;
 
   @media (min-width: $tablet-width) {
+    bottom: -5px;
+    width: 130px;
+
     @include font-set(14px, 14px);
 
     background-color: $basic-color;

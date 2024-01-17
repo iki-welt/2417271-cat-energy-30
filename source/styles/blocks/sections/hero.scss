@@ -1,19 +1,24 @@
 .hero {
-  background-image:
-    linear-gradient(rgba($brand-color, 0.85) 0% 100%),
-    image-set(url("../../../images/index-background_s@1x.jpg") type("image/jpg") 1x, url("../../../images/index-background_s@2x.jpg") type("image/jpg") 2x),
-    linear-gradient(to right, #504f54, #3f3e43);
-  background-size: 100% 320px, 320px 320px, 100% 320px;
-  background-repeat: no-repeat;
-  background-position: top center;
+  @media (max-width: $mobile-only-width) {
+    margin-bottom: 20px;
+    background-image:
+      linear-gradient(rgba($brand-color, 0.85) 0% 100%),
+      image-set(url("../../../images/index-background_s@1x.jpg") type("image/jpg") 1x, url("../../../images/index-background_s@2x.jpg") type("image/jpg") 2x),
+      linear-gradient(to right, #504f54, #3f3e43);
+    background-size: 100% 302px, 320px 302px, 100% 302px;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
 
   @media (min-width: $tablet-width) {
+    margin-top: 65px;
     background-color: inherit;
-    background-image: none;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 575px;
+    margin-top: 0;
+    margin-bottom: 85px;
   }
 }
 
@@ -32,20 +37,20 @@
 }
 
 .hero__title {
-  max-width: 400px;
-  margin: 25px auto;
+  @media (max-width: $mobile-only-width) {
+    max-width: 400px;
+    margin: 25px auto;
 
-  line-height: 36px;
-  text-align: center;
+    line-height: 36px;
+    text-align: center;
+  }
 
   @media (min-width: $tablet-width) {
     max-width: 500px;
-    margin: 65px 0 40px 90px;
-    text-align: start;
+    margin: 0 0 40px 90px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 500px;
     margin: 110px 80px 40px;
   }
 }
@@ -95,13 +100,19 @@
 }
 
 .hero__pic {
+  @media (max-width: $mobile-only-width) {
+    margin-bottom: 2px;
+  }
+
   @media (min-width: $tablet-width) {
+    align-self: center;
     margin-top: -85px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 145px;
+    top: 115px;
     left: 557px;
+    align-self: unset;
   }
 }
