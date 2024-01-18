@@ -1,11 +1,26 @@
-// .food-concept {}
+.food-concept {
+  margin-bottom: 50px;
 
-.food-concept__wrapper {
-  margin-bottom: 49px;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 45px;
+    margin-bottom: 45px;
+
+    border-bottom: 1px solid $outline-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    margin-bottom: 70px;
+    border-bottom: none;
+  }
 }
 
 .food-concept__title {
   margin: 0 0 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
 }
 
 .food-concept__list {
@@ -14,6 +29,20 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 37px 135px;
+    margin-right: 75px;
+    counter-reset: concept 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 84px;
+    margin-right: 0;
+  }
 }
 
 .food-concept__item {
@@ -24,38 +53,69 @@
   &::before {
     content: "";
     display: block;
-    min-width: 60px;
-    min-height: 60px;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
     background-color: $brand-color;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    max-width: 450px;
+    min-height: 280px;
+    counter-increment: concept 1;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin: 40px 0 31px;
+    }
+
+    &::after {
+      content: counter(concept);
+      position: absolute;
+      right: 0;
+      display: block;
+      z-index: -1;
+      min-width: 130px;
+
+      color: $sub-bg-color;
+      font-family: $title-font;
+      font-size: 280px;
+      line-height: 280px;
+    }
   }
 }
 
 .food-concept__item--nutrient {
   &::before {
-    background-image: url("../../../images/icons/food-concept_leaf.svg");
+    background-image: url("../../../images/icons/stack.svg#food-concept_leaf");
     background-size: 25px 28px;
   }
 }
 
 .food-concept__item--powder {
   &::before {
-    background-image: url("../../../images/icons/food-concept_water.svg");
+    background-image: url("../../../images/icons/stack.svg#food-concept_water");
     background-size: 26px 29px;
   }
 }
 
 .food-concept__item--diet {
   &::before {
-    background-image: url("../../../images/icons/food-concept_fork-knife.svg");
+    background-image: url("../../../images/icons/stack.svg#food-concept_fork-knife");
     background-size: 25px 30px;
   }
 }
 
 .food-concept__item--timing {
   &::before {
-    background-image: url("../../../images/icons/food-concept_clock.svg");
+    background-image: url("../../../images/icons/stack.svg#food-concept_clock");
     background-size: 26px 31px;
   }
 }

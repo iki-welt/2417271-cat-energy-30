@@ -1,23 +1,34 @@
 $draggler-position: 50%;
 
 .slider {
+  display: grid;
+  grid-template-columns: $draggler-position calc(100% - $draggler-position);
   position: relative;
   width: 280px;
   height: 256px;
-}
 
-.slider__before-pic {
-  max-width: 280px;
+  & img {
+    max-width: 280px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+
+    & img {
+      max-width: 560px;
+    }
+  }
 }
 
 .slider__before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: $draggler-position;
   overflow: hidden;
+}
 
-  background-color: $sub-bg-color;
+.slider__after {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
 }
 
 
@@ -46,6 +57,10 @@ $draggler-position: 50%;
     height: 108px;
     border-radius: 4px;
     background-color: $slider-color;
+
+    @media (min-width: $tablet-width) {
+      height: 236px;
+    }
   }
 
   &::before {

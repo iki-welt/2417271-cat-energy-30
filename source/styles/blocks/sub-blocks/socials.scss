@@ -1,14 +1,11 @@
 .socials {
-  @include list-default;
+  list-style: none;
 
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0;
   justify-content: center;
   gap: 24px;
 }
-
-// .socials__item {}
 
 .socials__link {
   display: block;
@@ -29,19 +26,19 @@
 }
 
 .socials__link--vk {
-  mask-image: url("../../../images/icons/social_vk.svg");
+  mask-image: url("../../../images/icons/stack.svg#social_vk");
   mask-size: contain;
   mask-repeat: no-repeat;
 }
 
 .socials__link--yt {
-  mask-image: url("../../../images/icons/social_youtube.svg");
+  mask-image: url("../../../images/icons/stack.svg#social_youtube");
   mask-size: contain;
   mask-repeat: no-repeat;
 }
 
 .socials__link--telegram {
-  mask-image: url("../../../images/icons/social_telegram.svg");
+  mask-image: url("../../../images/icons/stack.svg#social_telegram");
   mask-size: contain;
   mask-repeat: no-repeat;
 }

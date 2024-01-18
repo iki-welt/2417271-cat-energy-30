@@ -1,30 +1,86 @@
 .example {
-  background-color: $sub-bg-color;
+  padding-top: 25px;
+  padding-bottom: 40px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    background-color: inherit;
+  background-color: $sub-bg-color-light;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 100px;
+    background-image: linear-gradient($basic-color 57%, $sub-bg-color-light 57% 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 75px;
+    background-image: linear-gradient($basic-color 23%, $sub-bg-color 23% 100%);
   }
 }
 
 .example__wrapper {
-  padding-top: 25px;
-  padding-bottom: 40px;
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .example__title {
   margin: 0 0 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 600px;
+    margin-bottom: 145px;
+  }
 }
 
 .example__text {
+  max-width: 600px;
   margin: 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 800px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 465px;
+    margin-bottom: 70px;
+  }
+}
+
+.example__stat {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 105px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: start;
+    gap: 60px;
+    max-width: 600px;
+    margin-bottom: 0;
+  }
 }
 
 .example__stat-list {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 350px;
+    margin-bottom: 0;
+  }
 }
 
-.example__price {
-  margin: 20px;
+.example__stat-price {
+  margin: 0;
 
   color: $primary-color;
   font-family: $title-font;
@@ -33,13 +89,29 @@
   @include font-set(14px, 20px);
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     @include font-set(20px, 20px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 330px;
   }
 }
 
-// .example__price-value {}
-
 .example__slider {
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 80px;
+  }
 }

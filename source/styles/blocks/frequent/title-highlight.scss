@@ -1,11 +1,50 @@
 .title-highlight {
+  position: relative;
+  margin: 0;
+
   color: $primary-color;
   font-family: $title-font;
+
+  background-color: inherit;
+
+  & span {
+    position: relative;
+    display: block;
+    padding: 0 20px;
+    margin-left: -20px;
+    z-index: 1;
+    width: min-content;
+
+    background-color: $basic-color;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15px;
+    display: block;
+    width: 100vw;
+    height: 2px;
+
+    background-color: $brand-color;
+    box-shadow: 100vw 0 0 $brand-color;
+  }
 
   @include font-set(24px, 26px);
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
     @include font-set(36px, 36px);
+
+    & span {
+      width: fit-content;
+      padding: 0 40px;
+      margin-left: -40px;
+    }
+
+    &::before {
+      top: 20px;
+    }
   }
 }

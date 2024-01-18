@@ -1,11 +1,105 @@
 .present {
+  margin-bottom: 37px;
+
   color: $highlight-color;
 
   @include font-set(16px, 20px);
 
-  background-color: $brand-color;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
-// .present-wrapper {}
+.present__wrapper {
+  min-height: 290px;
+  min-width: 245px;
+  max-width: 280px;
+  padding: 60px 55px 40px;
+  margin: 0 auto;
 
-// .present__text {}
+  background-image:
+    linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)),
+    image-set(url("../../../images/cat-bag_s@1x.webp") type("image/webp") 1x,
+      url("../../../images/cat-bag_s@2x.webp") type("image/webp") 2x,
+      url("../../../images/cat-bag_s@1x.jpg") type("image/jpg") 1x,
+      url("../../../images/cat-bag_s@2x.jpg") type("image/jpg") 2x),
+    linear-gradient(to right, $outline-color-darker, $basic-color);
+  background-repeat: no-repeat;
+  background-size: cover, auto, cover;
+  background-position: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 45px;
+    background-image: url("../../../images/icons/stack.svg#present_gift");
+    background-repeat: no-repeat;
+    background-size: 80px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 265px;
+    min-height: 200px;
+    max-width: 92%;
+    padding: 50px 105px 60px 78px;
+
+    background-image:
+      linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)),
+      image-set(url("../../../images/cat-bag_m@1x.webp") type("image/webp") 1x,
+        url("../../../images/cat-bag_m@2x.webp") type("image/webp") 2x,
+        url("../../../images/cat-bag_m@1x.jpg") type("image/jpg") 1x,
+        url("../../../images/cat-bag_m@2x.jpg") type("image/jpg") 2x),
+      linear-gradient(to right, #3c3c3c, $basic-color);
+
+    &::before {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    min-height: 285px;
+    max-width: 245px;
+    padding: 55px 40px 45px;
+    margin: 116px 0 0;
+
+    background-image:
+      linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)),
+      image-set(url("../../../images/cat-bag_l@1x.webp") type("image/webp") 1x,
+        url("../../../images/cat-bag_l@2x.webp") type("image/webp") 2x,
+        url("../../../images/cat-bag_l@1x.jpg") type("image/jpg") 1x,
+        url("../../../images/cat-bag_l@2x.jpg") type("image/jpg") 2x);
+
+    &::before {
+      margin: 0 auto 50px;
+    }
+  }
+}
+
+.present__text {
+  max-width: 220px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 180px;
+    margin: 0;
+
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 165px;
+    text-align: center;
+  }
+}

@@ -5,7 +5,21 @@
 }
 
 .page-footer__wrapper {
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
 }
 
 .page-footer__logo-link {
@@ -14,11 +28,32 @@
   padding-bottom: 20px;
   margin: 0 auto;
   text-align: center;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .page-footer__socials {
+  padding: 20px 0;
+  margin: 0;
   border-top: 1px solid $outline-color-dark;
   border-bottom: 1px solid $outline-color-dark;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
 }
 
 .page-footer__developer {
@@ -26,32 +61,37 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
-}
 
-.page-footer__developer-link {
-  &:active {
+  &:has(a:hover, a:focus) {
+    .page-footer__developer-link--icon {
+      background-color: $brand-color;
+    }
+  }
+
+  &:has(a:active) {
     opacity: 0.3;
+
+    .page-footer__developer-link--icon {
+      background-color: $brand-color;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-self: end;
+    gap: 23px;
+    padding: 0;
   }
 }
+
 
 .page-footer__developer-link--icon {
   display: inline-block;
   width: 27px;
   height: 34px;
 
-  mask-image: url("../../../images/icons/social_html-academy.svg");
+  mask-image: url("../../../images/icons/stack.svg#social_html-academy");
   mask-size: contain;
   mask-repeat: no-repeat;
 
   background-color: $content-color;
-
-  &:hover,
-  &:focus {
-    background-color: $brand-color;
-  }
-
-  &:active {
-    background-color: $brand-color;
-    opacity: 0.3;
-  }
 }

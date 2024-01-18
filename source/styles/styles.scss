@@ -2,7 +2,7 @@
 @import "./global/variables.scss";
 @import "./global/mixins.scss";
 @import "./global/fonts.scss";
-@import "./global/common.scss";
+@import "./global/global.scss";
 @import "./global/visually-hidden";
 
 /* FREQUENT */
@@ -20,6 +20,7 @@
 @import "./blocks/main-blocks/page-footer.scss";
 
 /* SUB BLOCKS */
+@import "./blocks/sub-blocks/js-toggler.scss";
 @import "./blocks/sub-blocks/intent-item.scss";
 @import "./blocks/sub-blocks/statistic.scss";
 @import "./blocks/sub-blocks/slider.scss";
@@ -27,6 +28,7 @@
 @import "./blocks/sub-blocks/product.scss";
 @import "./blocks/sub-blocks/more.scss";
 @import "./blocks/sub-blocks/additional-card.scss";
+@import "./blocks/sub-blocks/desktop-present-wrapper.scss";
 
 /* SECTIONS */
 @import "./blocks/sections/hero.scss";

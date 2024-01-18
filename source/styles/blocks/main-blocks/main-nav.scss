@@ -7,15 +7,47 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    width: 70%;
+    margin: 0;
+
+    background-color: inherit;
+
     @include font-set(18px, 24px);
   }
 
   @media (min-width: $desktop-width) {
+    width: 50%;
+
     @include font-set(20px, 30px);
+  }
+}
+
+.main-nav--js {
+  @media (max-width: $mobile-only-width) {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 100%;
+
+    transition: 0.3s ease;
+  }
+}
+
+.main-nav--no-js {
+  @media (max-width: $mobile-only-width) {
+    position: static;
+  }
+}
+
+.main-nav--is-open {
+  @media (max-width: $mobile-only-width) {
+    transform: translateY(calc(66px + 100%));
+  }
+}
+
+.main-nav--index {
+  @media (min-width: $desktop-width) {
     color: $highlight-color;
-
-
-    background-color: $brand-color;
   }
 }
 
@@ -25,20 +57,47 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  background-color: $basic-color;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 10px 33px;
+    justify-content: flex-end;
+    margin-right: 5px;
+
+    background-color: inherit;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .main-nav__item {
   display: flex;
 
-  border-top: 1px solid $outline-color;
+  @media (max-width: $mobile-only-width) {
+    border-top: 1px solid $outline-color;
+
+    &:last-child {
+      border-bottom: 1px solid $outline-color;
+    }
+  }
 }
 
 .main-nav__link {
-  flex-grow: 1;
-  padding-top: 22px;
-  padding-bottom: 24px;
+  @media (max-width: $mobile-only-width) {
+    flex-grow: 1;
+    padding: 23px 20px;
+  }
 
-  &:hover {
+  @media (min-width: $tablet-width) {
+    padding: 10px 0;
+  }
+
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 
@@ -47,4 +106,32 @@
   }
 }
 
-// .main-nav__link--current {}
+.main-nav__link--current {
+  @media (max-width: $mobile-only-width) {
+    background-color: $brand-color;
+    color: $highlight-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 2px;
+
+      background-color: $brand-color;
+    }
+  }
+}
+
+.main-nav__link--current--index {
+  @media (min-width: $desktop-width) {
+    &::after {
+      background-color: $basic-color;
+    }
+  }
+}

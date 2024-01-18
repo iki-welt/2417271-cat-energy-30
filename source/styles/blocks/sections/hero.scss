@@ -1,14 +1,24 @@
 .hero {
-  background-image:
-    linear-gradient(rgba($brand-color, 0.85) 0% 100%),
-    image-set(url("../../../images/index-background_s@1x.jpg") type("image/jpg") 1x, url("../../../images/index-background_s@2x.jpg") type("image/jpg") 2x),
-    linear-gradient(to right, #504f54 50%, #3f3e43 50% 100%);
-  background-size: 100% 320px, 320px 320px, 100% 320px;
-  background-repeat: no-repeat;
-  background-position: top center;
+  @media (max-width: $mobile-only-width) {
+    margin-bottom: 20px;
+    background-image:
+      linear-gradient(rgba($brand-color, 0.85) 0% 100%),
+      image-set(url("../../../images/index-background_s@1x.jpg") type("image/jpg") 1x, url("../../../images/index-background_s@2x.jpg") type("image/jpg") 2x),
+      linear-gradient(to right, #504f54, #3f3e43);
+    background-size: 100% 302px, 320px 302px, 100% 302px;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
 
   @media (min-width: $tablet-width) {
+    margin-top: 65px;
     background-color: inherit;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 575px;
+    margin-top: 0;
+    margin-bottom: 85px;
   }
 }
 
@@ -16,16 +26,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    align-items: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .hero__title {
-  margin: 27px auto 25px;
+  @media (max-width: $mobile-only-width) {
+    max-width: 400px;
+    margin: 25px auto;
 
-  text-align: center;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 500px;
+    margin: 0 0 40px 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 110px 80px 40px;
+  }
 }
 
 .hero__slogan {
-  margin: 0 auto 29px;
+  max-width: 400px;
+  margin: 0 auto 30px;
 
   color: $highlight-color;
   font-family: $title-font;
@@ -35,13 +67,52 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    max-width: 500px;
+    margin: 0;
+    margin-left: 90px;
+    margin-bottom: 50px;
     color: $primary-color;
+    text-align: start;
 
     @include font-set(20px, 20px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 80px 52px;
   }
 }
 
 .hero__form-button {
-  order: 1;
-  margin-top: 3px;
+  order: 4;
+  max-width: 400px;
+
+  @media (min-width: $tablet-width) {
+    z-index: 1;
+    order: 0;
+    min-width: 244px;
+    margin: 0;
+    margin-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
+}
+
+.hero__pic {
+  @media (max-width: $mobile-only-width) {
+    margin-bottom: 2px;
+  }
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    margin-top: -85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 115px;
+    left: 527px;
+    align-self: unset;
+  }
 }

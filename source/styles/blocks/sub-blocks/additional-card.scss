@@ -1,10 +1,50 @@
-// .additional-card {}
+.additional-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 13px;
+  padding: 13px 0 20px;
+  border-bottom: 1px solid $outline-color-darker;
+
+  &:first-child {
+    border-top: 1px solid $outline-color-darker;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 40px 26px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 245px;
+    column-gap: 40px;
+    align-items: end;
+    padding: 15px 0;
+  }
+}
+
+.additional-card__title-link {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 0;
+  }
+}
 
 .additional-card__title {
+  margin: 0;
   color: $primary-color;
   font-family: $title-font;
 
   @include font-set(16px, 16px);
+  font-weight: 400;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -13,14 +53,48 @@
 }
 
 .additional-card__description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   @include list-default;
   @include font-set(14px, 14px);
 
   @media (min-width: $tablet-width) {
+    justify-self: end;
+    justify-content: center;
+    gap: 50px;
+
     @include font-set(16px, 20px);
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    gap: unset;
+    width: 100%;
+    padding: 7px 0;
   }
 }
 
-// .additional-card__volume {}
+.additional-card__price {
+  @media (min-width: $tablet-width) {
+    min-width: 40px;
 
-// .additional-card__price {}
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: unset;
+  }
+}
+
+.additional-card__link {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: unset;
+  }
+}

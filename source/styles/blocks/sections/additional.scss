@@ -1,11 +1,34 @@
-// .additional {}
+.additional {
+  margin-bottom: 32px;
 
-// .additional__wrapper {}
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
 
-// .additional__title {}
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.additional__wrapper {
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.additional__title {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
 
 .additional__list {
   @include list-default;
 }
-
-// .additional__item {}
