@@ -20,7 +20,7 @@
   }
 
   &::before {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   &::after {
@@ -49,6 +49,10 @@
   @media (min-width: $desktop-width) {
     flex-grow: 0;
     min-width: 245px;
+
+    &::before {
+      margin-bottom: 36px;
+    }
   }
 }
 
@@ -58,7 +62,11 @@
 
   @media (min-width: $tablet-width) {
     max-width: 170px;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
   }
 }
 
@@ -73,6 +81,10 @@
     margin-bottom: 80px;
 
     @include font-set(16px, 18px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
   }
 }
 

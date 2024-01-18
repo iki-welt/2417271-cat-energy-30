@@ -35,11 +35,15 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
+    @include font-set(36px, 36px);
+
     & span {
       padding: 0 40px;
       margin-left: -40px;
     }
 
-    @include font-set(36px, 36px);
+    &::before {
+      top: 20px;
+    }
   }
 }

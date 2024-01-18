@@ -1,27 +1,24 @@
 .present {
+  margin-bottom: 37px;
+
   color: $highlight-color;
 
   @include font-set(16px, 20px);
-}
-
-.present__wrapper {
-  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 75px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 245px;
-    padding: 0;
-    padding-top: 116px;
+    margin-bottom: 0;
   }
 }
 
-.present__bg-wrapper {
+.present__wrapper {
   min-height: 290px;
-  max-width: 300px;
-  padding: 60px 60px 40px;
+  min-width: 245px;
+  max-width: 280px;
+  padding: 60px 55px 40px;
   margin: 0 auto;
 
   background-image:
@@ -43,7 +40,7 @@
     margin: 0 auto 45px;
     background-image: url("../../../images/icons/stack.svg#present_gift");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 80px auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -52,9 +49,8 @@
     align-items: center;
     column-gap: 265px;
     min-height: 200px;
-    max-width: 100%;
-    padding: 60px 125px;
-    padding-left: 75px;
+    max-width: 92%;
+    padding: 50px 105px 60px 78px;
 
     background-image:
       linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)),
@@ -74,7 +70,7 @@
     min-height: 285px;
     max-width: 245px;
     padding: 55px 40px 45px;
-    margin: 0;
+    margin: 116px 0 0;
 
     background-image:
       linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)),
@@ -84,7 +80,7 @@
         url("../../../images/cat-bag_l@2x.jpg") type("image/jpg") 2x);
 
     &::before {
-      margin: 0 auto 45px;
+      margin: 0 auto 50px;
     }
   }
 }

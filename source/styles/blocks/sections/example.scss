@@ -5,7 +5,7 @@
   background-color: $sub-bg-color-light;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 105px;
+    padding: 0 0 100px;
     background-image: linear-gradient($basic-color 57%, $sub-bg-color-light 57% 100%);
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,7 +58,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 105px;
   }
 
   @media (min-width: $desktop-width) {
@@ -112,6 +112,6 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 0;
-    right: 110px;
+    right: 80px;
   }
 }

@@ -10,15 +10,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 30px 40px 25px;
+    padding: 27px 40px 26px;
     grid-template-columns: 1fr 1fr;
     row-gap: 25px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 245px;
-    column-gap: 80px;
-    align-items: center;
+    column-gap: 40px;
+    align-items: end;
     padding: 15px 0;
   }
 }
@@ -31,6 +31,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 0;
   }
 }
 
@@ -68,6 +72,19 @@
     justify-content: space-between;
     gap: unset;
     width: 100%;
+    padding: 7px 0;
+  }
+}
+
+.additional-card__price {
+  @media (min-width: $tablet-width) {
+    min-width: 40px;
+
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: unset;
   }
 }
 

@@ -1,12 +1,12 @@
 .statistic {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  gap: 30px;
   justify-items: center;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    gap: 43px;
+    gap: 45px;
   }
 }
 
@@ -48,7 +48,7 @@
   background-color: $sub-bg-color-light;
 
   @media (min-width: $tablet-width) {
-    bottom: -5px;
+    bottom: -7px;
     width: 130px;
 
     @include font-set(14px, 14px);
