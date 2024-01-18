@@ -1,5 +1,6 @@
 .form-item {
   display: flex;
+  flex-wrap: wrap;
   gap: 13px;
   align-items: center;
 }
@@ -53,19 +54,12 @@
   }
 }
 
-.form-item__name:not(span) {
-  max-width: 70px;
-
-  @media (min-width: $tablet-width) {
-    max-width: 200px;
-  }
-}
-
 .form-item__inp {
   flex-grow: 1;
-  padding: 13px 15px;
+  padding: 12px 15px;
   font-family: inherit;
   font-size: inherit;
+  line-height: inherit;
   text-transform: inherit;
   border: 1px solid $outline-color-form;
 

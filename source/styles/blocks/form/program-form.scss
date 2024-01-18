@@ -1,32 +1,35 @@
-.program-form__wrapper {
-  padding-bottom: 30px;
+.program-form {
+  margin-top: 25px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 60px;
+    margin-top: 65px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 80px;
+    margin-top: 77px;
+    margin-bottom: 80px;
   }
 }
 
 .program-form__title {
-  margin: 0;
-  padding: 27px 0 37px;
+  margin: 0 0 35px;
 
   @media (min-width: $tablet-width) {
-    padding: 65px 40px 55px;
+    padding: 0 40px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 0 55px;
+    padding: 0;
+    margin-bottom: 55px;
   }
 }
 
 .program-form__intro {
   max-width: 250px;
-  margin: 0;
-  padding-bottom: 40px;
+  margin: 0 0 40px;
   color: $primary-color;
   font-family: $title-font;
 
@@ -35,15 +38,16 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 40px;
-    padding-bottom: 65px;
-    max-width: 350px;
+    margin-bottom: 65px;
+    max-width: 430px;
 
     @include font-set(20px, 30px);
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 390px;
     padding-left: 0;
-    padding-bottom: 65px;
+    margin-bottom: 60px;
   }
 }
 
@@ -74,7 +78,7 @@
 
 .program-form__button {
   width: calc(100% - 40px);
-  margin: 15px 20px 20px;
+  margin: 0 20px 15px;
 
   border: none;
 
@@ -88,11 +92,17 @@
   display: block;
   margin: 0 auto;
   color: $primary-color;
+  font-family: $content-font;
   text-align: center;
+  text-transform: none;
 
   @include font-set(14px, 16px);
 
   @media (min-width: $tablet-width) {
+    justify-self: start;
+    width: 100%;
+
     @include font-set(16px, 16px);
+    text-align: start;
   }
 }

@@ -10,10 +10,10 @@
   & span {
     position: relative;
     display: block;
-    width: fit-content;
     padding: 0 20px;
     margin-left: -20px;
     z-index: 1;
+    width: min-content;
 
     background-color: $basic-color;
   }
@@ -38,6 +38,7 @@
     @include font-set(36px, 36px);
 
     & span {
+      width: fit-content;
       padding: 0 40px;
       margin-left: -40px;
     }
