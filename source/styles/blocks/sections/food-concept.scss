@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 45px;
-    margin-bottom: 665px;
+    margin-bottom: 620px;
 
     border-bottom: 1px solid $outline-color;
   }
@@ -92,4 +92,5 @@
 
 .food-concept__content {
   margin: 0;
+  align-self: center;
 }

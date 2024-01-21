@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 70px;
+    margin-bottom: 74px;
   }
 }
 
@@ -52,6 +52,12 @@
   }
 }
 
+.form-group--comment {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
+}
+
 .form-group__title {
   display: block;
   margin-bottom: 35px;
@@ -69,7 +75,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 80px;
+    margin-bottom: 74px;
   }
 }
 

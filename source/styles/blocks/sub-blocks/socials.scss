@@ -12,13 +12,15 @@
   width: 28px;
   height: 22px;
 
-  // &:hover+.socials__icon,
-  // &:focus+.socials__icon {
-  //   color: $brand-color;
-  // }
+  color: $slider-color;
 
-  // &:active+.socials__icon {
-  //   fill: $brand-color;
-  //   opacity: 0.3;
-  // }
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
+
+  &:active {
+    fill: $brand-color;
+    opacity: 0.3;
+  }
 }

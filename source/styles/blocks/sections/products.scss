@@ -19,8 +19,12 @@
 .products__list {
   @include list-default;
 
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $mobile-plus-width) {
+    grid-template-columns: 1fr 1fr;
+  }
 
   @media (min-width: $tablet-width) {
     gap: 140px 60px;
@@ -28,7 +32,12 @@
     margin-top: 80px;
   }
 
+  @media (min-width: $tablet-plus-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
     gap: 145px 80px;
   }
 }

@@ -2,17 +2,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr min-content min-content;
-  flex-grow: 1;
 
-  min-width: 320px;
   padding: 20px 20px 25px;
 
   border-bottom: 1px solid $sub-bg-color-dark;
 
+  @media (min-width: $mobile-plus-width) {
+    grid-template-columns: 60% 40%;
+  }
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
     justify-items: center;
-    min-width: 324px;
     padding: 0 35px 40px;
 
     text-align: center;
@@ -21,7 +22,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 38px 40px;
-    flex-grow: 0;
     min-width: 245px;
   }
 }

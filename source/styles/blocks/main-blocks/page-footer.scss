@@ -29,13 +29,15 @@
   margin: 0 auto;
   text-align: center;
 
-  &:hover,
-  &:focus {
-    opacity: 0.8;
-  }
+  &:not(div) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
 
-  &:active {
-    opacity: 0.6;
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   @media (min-width: $tablet-width) {

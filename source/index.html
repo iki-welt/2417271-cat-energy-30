@@ -18,17 +18,17 @@
   <header class="page-header page-header--index">
     <div class="page-header__wrapper container">
       <div class="page-header__row">
-        <a class="page-header__logo-icon" href="index.html" aria-current="page">
+        <div class="page-header__logo-icon">
           <picture>
             <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo_l.svg" width="202" height="59">
             <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo_m.svg" width="174" height="50">
             <img class="page-header__logo-img" src="images/logo_s.svg" width="33" height="38"
               alt="Логотип 'Cat energy'.">
           </picture>
-        </a>
-        <a class="page-header__logo-type" href="index.html" tabindex="-1" aria-current="page">
+        </div>
+        <div class="page-header__logo-type">
           <img class="page-header__brand" src="images/logo-type_s.svg" width="101" height="18" alt="Cat energy.">
-        </a>
+        </div>
         <button class="page-header__nav-toggler burger burger--no-js js-burger" type="button"
           aria-label="Открыть меню.">
           <span class="burger__line"></span>
@@ -39,8 +39,7 @@
       <nav class="page-header__nav main-nav main-nav--index main-nav--no-js js-main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current main-nav__link--current--index" href="index.html"
-              aria-current="page">главная</a>
+            <div class="main-nav__link main-nav__link--current main-nav__link--current--index">главная</div>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">каталог продукции</a>
@@ -182,11 +181,7 @@
             </picture>
           </div>
           <button class="slider__draggler" type="button" aria-label="Потяните в бок и сравните результат.">
-            <svg class="slider__arrows" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18"
-              fill="currentColor">
-              <path d="M8 0L0 9L8 18V0Z" />
-              <path d="M24 9L16 0V18L24 9Z" />
-            </svg>
+            <span class="slider__arrows"></span>
           </button>
           <div class="slider__after">
             <picture>
@@ -219,14 +214,14 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
-      <a class="page-footer__logo-link" href="index.html" aria-current="page">
+      <div class="page-footer__logo-link">
         <img src="images/logo-type_s.svg" width="128" height="24" alt="Логотип 'Cat energy'.">
-      </a>
+      </div>
       <ul class="page-footer__socials socials">
         <li class="socials__item">
           <a class="socials__link" href="https://vk.com/htmlacademy"
             aria-label="Cat Energy в 'В контакте'.">
-            <svg class="socials__icon" role="img" width="28" height="22">
+            <svg class="socials__icon" role="img" width="28" height="22" fill="currentColor">
               <use href="images/icons/stack.svg#social_vk"></use>
             </svg>
           </a>
@@ -234,7 +229,7 @@
         <li class="socials__item">
           <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru"
             aria-label="Cat Energy в 'You Tube'.">
-            <svg class="socials__icon" role="img" width="28" height="22">
+            <svg class="socials__icon" role="img" width="28" height="22" fill="currentColor">
               <use href="images/icons/stack.svg#social_youtube"></use>
             </svg>
           </a>
@@ -242,7 +237,7 @@
         <li class="socials__item">
           <a class="socials__link" href="https://t.me/htmlacademy"
             aria-label="Cat Energy в 'Telegram'.">
-            <svg class="socials__icon" role="img" width="28" height="22">
+            <svg class="socials__icon" role="img" width="28" height="22" fill="currentColor">
               <use href="images/icons/stack.svg#social_telegram"></use>
             </svg>
           </a>

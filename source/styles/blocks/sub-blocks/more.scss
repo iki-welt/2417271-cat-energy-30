@@ -2,8 +2,6 @@
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  flex-grow: 1;
-  min-width: 320px;
   padding: 25px 20px;
 
   border-bottom: 1px solid $sub-bg-color-dark;
@@ -30,7 +28,6 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
     justify-items: center;
-    min-width: 324px;
     padding: 50px 35px 40px;
 
     text-align: center;
@@ -47,9 +44,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-grow: 0;
-    min-width: 245px;
-
     &::before {
       margin-bottom: 36px;
     }

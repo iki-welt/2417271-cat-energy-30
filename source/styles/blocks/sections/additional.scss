@@ -1,12 +1,23 @@
 .additional {
-  margin-bottom: 32px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    margin-bottom: 87px;
+  }
+}
+
+.additional__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    column-gap: 80px;
+    max-width: 1380px;
+    padding: 0 80px;
+    margin: 0 auto 85px;
   }
 }
 
@@ -19,10 +30,20 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-column: span 2;
     margin-left: 0;
   }
 }
 
 .additional__list {
   @include list-default;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }

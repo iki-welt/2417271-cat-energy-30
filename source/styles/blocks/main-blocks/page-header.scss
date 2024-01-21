@@ -69,13 +69,15 @@
 }
 
 .page-header__logo-icon {
-  &:hover,
-  &:focus {
-    opacity: 0.8;
-  }
+  &:not(div) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
 
-  &:active {
-    opacity: 0.6;
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
 
@@ -83,13 +85,15 @@
   justify-self: center;
   align-self: center;
 
-  &:hover,
-  &:focus {
-    opacity: 0.8;
-  }
+  &:not(div) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
 
-  &:active {
-    opacity: 0.6;
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   @media (min-width: $tablet-width) {

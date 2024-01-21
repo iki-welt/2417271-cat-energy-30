@@ -95,13 +95,15 @@
     padding: 10px 0;
   }
 
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
+  &:not(div) {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
 
-  &:active {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
