@@ -1,0 +1,1 @@
+var e=document.querySelector(".js-toggler"),s=document.querySelector(".main-nav--js");s.classList.remove("main-nav--no-js");e.classList.remove("js-toggler--no-js");e.addEventListener("click",t=>{t.preventDefault(),e.classList.toggle("js-toggler--is-open"),s.classList.toggle("main-nav--is-open")});
