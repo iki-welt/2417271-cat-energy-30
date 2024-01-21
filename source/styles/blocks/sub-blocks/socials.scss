@@ -12,33 +12,13 @@
   width: 28px;
   height: 22px;
 
-  background-color: $content-color;
+  // &:hover+.socials__icon,
+  // &:focus+.socials__icon {
+  //   color: $brand-color;
+  // }
 
-  &:hover,
-  &:focus {
-    background-color: $brand-color;
-  }
-
-  &:active {
-    background-color: $brand-color;
-    opacity: 0.3;
-  }
-}
-
-.socials__link--vk {
-  mask-image: url("../../../images/icons/stack.svg#social_vk");
-  mask-size: contain;
-  mask-repeat: no-repeat;
-}
-
-.socials__link--yt {
-  mask-image: url("../../../images/icons/stack.svg#social_youtube");
-  mask-size: contain;
-  mask-repeat: no-repeat;
-}
-
-.socials__link--telegram {
-  mask-image: url("../../../images/icons/stack.svg#social_telegram");
-  mask-size: contain;
-  mask-repeat: no-repeat;
+  // &:active+.socials__icon {
+  //   fill: $brand-color;
+  //   opacity: 0.3;
+  // }
 }

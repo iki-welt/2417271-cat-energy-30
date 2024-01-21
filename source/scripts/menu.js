@@ -1,12 +1,12 @@
-const button = document.querySelector('.js-toggler');
-const navMenu = document.querySelector('.main-nav--js');
+const buttonMenu = document.querySelector('.js-burger');
+const navMenu = document.querySelector('.js-main-nav');
 
+buttonMenu.classList.remove('burger--no-js');
 navMenu.classList.remove('main-nav--no-js');
-button.classList.remove('js-toggler--no-js');
 
-button.addEventListener('click', (e) => {
+buttonMenu.addEventListener('click', (e) => {
   e.preventDefault();
 
-  button.classList.toggle('js-toggler--is-open');
+  buttonMenu.classList.toggle('burger--is-open');
   navMenu.classList.toggle('main-nav--is-open');
 });

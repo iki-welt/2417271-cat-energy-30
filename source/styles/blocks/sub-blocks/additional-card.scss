@@ -13,6 +13,8 @@
     padding: 27px 40px 26px;
     grid-template-columns: 1fr 1fr;
     row-gap: 25px;
+    border-left: 1px solid $outline-color-darker;
+    border-right: 1px solid $outline-color-darker;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,6 +22,8 @@
     column-gap: 40px;
     align-items: end;
     padding: 15px 0;
+    border-left: none;
+    border-right: none;
   }
 }
 

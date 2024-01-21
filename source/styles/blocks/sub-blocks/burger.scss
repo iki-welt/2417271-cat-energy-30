@@ -1,4 +1,4 @@
-.js-toggler {
+.burger {
   position: relative;
   padding: 0;
   margin: 0;
@@ -11,7 +11,7 @@
   }
 }
 
-.js-toggler-line {
+.burger__line {
   position: absolute;
   right: 3px;
   display: block;
@@ -35,12 +35,12 @@
   }
 }
 
-.js-toggler--no-js {
+.burger--no-js {
   display: none;
 }
 
-.js-toggler--is-open {
-  .js-toggler-line {
+.burger--is-open {
+  .burger__line {
     &:nth-child(1) {
       transform: translate(0, 8px) rotate(47deg);
     }

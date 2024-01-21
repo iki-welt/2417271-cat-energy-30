@@ -5,11 +5,45 @@
   padding: 30px 30px 20px 20px;
   background-color: $sub-bg-color;
 
+  @media (min-width: $tablet-width) {
+    min-height: 370px;
+    padding: 80px 315px 40px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 80px 50px 52px;
+  }
+}
+
+
+// .intent-item--slim {
+//   &::after {
+//     background-position: center top -3px;
+
+//     @media (min-width: $tablet-width) {
+//       background-position: center top -14px;
+//     }
+
+//     @media (min-width: $desktop-width) {
+//       background-size: 70px auto;
+//       background-position: center top -9px;
+//     }
+//   }
+// }
+
+.intent__icon {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 70px;
+  height: 70px;
+
   &::before {
     content: "";
     position: absolute;
-    top: 25px;
-    left: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: block;
     width: 50px;
     height: 50px;
@@ -17,88 +51,75 @@
     background-color: $brand-color;
   }
 
-  &::after {
-    content: "";
+  & svg {
     position: absolute;
-    top: 15px;
-    left: 10px;
-    display: block;
-    width: 70px;
-    height: 70px;
-    background-position: center;
-    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 370px;
-    padding: 80px 315px 40px 50px;
+    top: 60px;
+    right: 28px;
+    left: unset;
+    width: 270px;
+    height: 270px;
 
     &::before {
-      top: 95px;
-      right: 63px;
-      left: unset;
       width: 200px;
       height: 200px;
-    }
-
-    &::after {
-      top: 60px;
-      right: 28px;
-      left: unset;
-      width: 270px;
-      height: 270px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 80px 50px 52px;
+    top: 30px;
+    left: 32px;
+    width: 140px;
+    height: 140px;
 
     &::before {
-      top: 50px;
-      left: 52px;
       width: 100px;
       height: 100px;
     }
+  }
+}
 
-    &::after {
-      top: 30px;
-      left: 32px;
+.intent__icon--slim {
+  & svg {
+    top: 7px;
+    transform: translate(-50%, 0);
+  }
+
+  @media (min-width: $tablet-width) {
+    & svg {
+      top: 24px;
       width: 140px;
-      height: 140px;
+      height: 194px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    & svg {
+      top: 13px;
+      width: 70px;
+      height: 97px;
     }
   }
 }
 
-
-.intent-item--slim {
-  &::after {
-    background-image: url("../../../images/icons/stack.svg#intent_slim");
-    background-size: 36px auto;
-    background-position: center top -3px;
-
-    @media (min-width: $tablet-width) {
-      background-size: 140px auto;
-      background-position: center top -14px;
-    }
-
-    @media (min-width: $desktop-width) {
-      background-size: 70px auto;
-      background-position: center top -9px;
+.intent__icon--pro {
+  @media (min-width: $tablet-width) {
+    & svg {
+      width: 268px;
+      height: 112px;
     }
   }
-}
 
-.intent-item--pro {
-  &::after {
-    background-image: url("../../../images/icons/stack.svg#intent_pro");
-    background-size: 67px auto;
-
-    @media (min-width: $tablet-width) {
-      background-size: 268px auto;
-    }
-
-    @media (min-width: $desktop-width) {
-      background-size: 134px auto;
+  @media (min-width: $desktop-width) {
+    & svg {
+      width: 134px;
+      height: 56px;
     }
   }
 }
@@ -134,10 +155,13 @@
   border-bottom: 1px solid $outline-color-dark;
 
   @media (min-width: $tablet-width) {
-    max-width: 550px;
     padding: 0;
-    margin-bottom: auto;
+    margin-bottom: 52px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
   }
 }
 
@@ -159,18 +183,18 @@
     content: "";
     display: block;
     width: 32px;
-    height: 10px;
+    height: 12px;
     color: $primary-color;
     background-image: url("../../../images/icons/stack.svg#intent_arrow");
     background-repeat: no-repeat;
     background-size: 32px auto;
-    background-position: center left -10px;
+    background-position: center left -5px;
   }
 
   &:hover,
   &:focus {
     &::after {
-      animation: bganimation 1s;
+      animation: bganimation 0.3s ease;
       background-position: center left;
     }
   }
@@ -185,8 +209,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 10px 0;
-    margin: 0;
-    gap: 25px;
+    margin-top: auto;
+    gap: 27px;
 
     @include font-set(20px, normal);
   }
@@ -198,7 +222,7 @@
 
 @keyframes bganimation {
   from {
-    background-position: center left -10px;
+    background-position: center left -5px;
   }
 
   to {

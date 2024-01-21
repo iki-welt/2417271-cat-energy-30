@@ -1,17 +1,15 @@
 .page-main__title {
-  padding: 25px 0 40px;
-  margin: 0 20px;
+  padding: 25px 20px 40px;
+  margin: 0 auto;
   border-bottom: 1px solid $sub-bg-color-dark;
 
   @media (min-width: $tablet-width) {
-    padding: 65px 0 85px;
-    margin: 0 30px;
+    padding: 65px 30px 85px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1220px;
-    padding: 75px 0 85px;
-    margin: 0 auto;
+    max-width: 1380px;
+    padding: 75px 80px 85px;
   }
 }

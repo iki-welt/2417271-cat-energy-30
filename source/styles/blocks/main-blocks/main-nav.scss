@@ -2,9 +2,19 @@
   color: $primary-color;
   font-family: $title-font;
 
-  @include font-set(20px, 20px);
   text-transform: uppercase;
   text-align: center;
+
+  @media (max-width: $mobile-only-width) {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 100%;
+
+    @include font-set(20px, 20px);
+
+    transition: 0.3s ease;
+  }
 
   @media (min-width: $tablet-width) {
     width: 70%;
@@ -19,17 +29,6 @@
     width: 50%;
 
     @include font-set(20px, 30px);
-  }
-}
-
-.main-nav--js {
-  @media (max-width: $mobile-only-width) {
-    position: absolute;
-    left: 0;
-    bottom: 100%;
-    width: 100%;
-
-    transition: 0.3s ease;
   }
 }
 
