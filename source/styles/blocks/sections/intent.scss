@@ -1,7 +1,11 @@
 .intent {
-  margin-bottom: 23px;
+  padding-top: 198px;
+  margin-bottom: 22px;
+
+  background-color: $basic-color;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     margin-bottom: 50px;
   }
 
